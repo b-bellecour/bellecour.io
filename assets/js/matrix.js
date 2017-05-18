@@ -1,3 +1,5 @@
+//matrix
+
 // Get canvas
 var cvs = document.getElementById('cvs');
 
@@ -53,7 +55,25 @@ function rain() {
 function randColour()
 {
   return'rgb(' + 
-    Math.floor(Math.random() * 0) + ',' + 
-    Math.floor(Math.random() * 25000) + ',' + 
-    Math.floor(Math.random() * 2500) + ')';
+    Math.floor(Math.random() * 2500) + ',' + 
+    Math.floor(Math.random() * 2500) + ',' + 
+    Math.floor(Math.random() * 25000) + ')';
 }
+
+//hider
+
+$(document).on("click", function(e){
+    if($(e.target).is("#unhide")){
+      $("#hide").show();
+    }
+});
+
+//smooth scroll
+
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
