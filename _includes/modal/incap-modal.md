@@ -1,0 +1,26 @@
+
+<header class="major special">
+<h2>Incapsula event fetcher</h2>
+<div>Connecting to Imperva's Incapsula API, this script Fetch and parse the WAF events.</div>
+
+<div class="modal-content-detail">
+	<h3 style="font-weight: 400; text-align:left; padding: -10px;" id="prerequisite">Prerequisite</h3>
+
+	<ul style="font-size: 0.9em">
+	<li>Linux / Unix kernel</li>
+
+	<li>Python 2.7</li>
+
+	<li>pip</li>
+
+	<li>pip install -U requests[security]</li>
+
+	<li>pip install -U termcolor</li>
+	</ul>
+</div>
+<ul style="text-align:center; padding-left:0px; ";>
+	<a href='https://github.com/b-bellecour/incapsula-fetcher' target="_blank" class="button "><i class="fa fa-github"></i>  Read more </a>
+</ul>
+</header>
+
+
