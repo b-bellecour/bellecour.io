@@ -580,7 +580,7 @@ Main components
           animation: load 10s;
 }
 
-/* projects */
+/* projects grid */
 
 .at-section__title {
   margin: 0 0 70px;
@@ -678,22 +678,37 @@ Main components
   transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+ 
+
 }
 .at-column:before {
   content: "";
   display: block;
   padding-top: 100%;
+  backface-visibility: hidden;
 }
 .at-column:hover {
   z-index: 1;
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.048);
+          transform: scale(1.048);
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+
+
+
 }
+
+.at-column:hover .fa-gradient {
+    background: -webkit-linear-gradient(90deg, #a8efbe, #a89cc8, #8cc9f0);
+    background: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+}
+
 .at-column:hover .at-social {
   margin: 16px 22px 0px 0px;
   opacity: 1;
@@ -724,20 +739,21 @@ Main components
 }
 .at-user {
   position: absolute;
+  padding: 10px;
   top: 50%;
   left: 0;
+  height: 230px;
   width: 100%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   text-align: center;
 }
 .at-user__avatar {
-  width: 98px;
-  height: 98px;
-  border-radius: 100%;
+  border-radius: 0%;
   margin: 0 auto 20px;
   overflow: hidden;
 }
+
 .at-user__avatar img {
   display: block;
   width: 100%;
@@ -755,7 +771,7 @@ Main components
   font-size: 0.875rem;
 }
 .at-social {
-  margin: 0 0 -18px;
+  margin: 0 6px 0 -18px;
   opacity: 0;
   -webkit-transition: margin 0.2s ease, opacity 0.2s ease;
   transition: margin 0.2s ease, opacity 0.2s ease;
@@ -851,6 +867,8 @@ padding: 30px;
 text-align:left;
 }
 
+
+
 .modal-overlay {
   background: #000000;
   position: fixed;
@@ -883,6 +901,12 @@ text-align:left;
   -o-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+}
+
+
+
+.modal-show, .modal-overlay div:not(.modal-content):not(.modal) {
+  filter: blur(3px);
 }
 
 

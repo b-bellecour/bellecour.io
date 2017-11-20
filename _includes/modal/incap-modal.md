@@ -19,7 +19,7 @@
 	</ul>
 </div>
 <ul style="text-align:center; padding-left:0px; ";>
-	<a href='https://github.com/b-bellecour/incapsula-fetcher' target="_blank" class="button "><i class="fa fa-github"></i>  Read more </a>
+	<a href='https://github.com/b-bellecour/incapsula-fetcher' target="_blank" class="button "><i class="fa fa-github"></i>  Download on github </a>
 </ul>
 </header>
 
