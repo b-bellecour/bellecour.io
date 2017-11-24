@@ -12,54 +12,57 @@
  
 // trigger on scroll
 
-$(function() {
+// $(function scrollTrigger() {
 
-  var $window           = $(window),
-      win_height_padded = $window.height() * 1.1,
-      isTouch           = Modernizr.touch;
+//  var $window           = $(window),
+//      win_height_padded = $window.height() * 1.1,
+//     isTouch           = Modernizr.touch;
 
-  if (isTouch) { $('.revealOnScroll').addClass('progress'); }
+//   if (isTouch) { $('.revealOnScroll').addClass('progress'); }
 
-  $window.on('scroll', revealOnScroll);
+//   $window.on('scroll', revealOnScroll);
 
-  function revealOnScroll() {
-    var scrolled = $window.scrollTop(),
-        win_height_padded = $window.height() * 1.1;
+//   function revealOnScroll() {
+//     var scrolled = $window.scrollTop(),
+//         win_height_padded = $window.height() * 1.1;
 
-    // Showed...
-    $(".revealOnScroll:not(.progress)").each(function () {
-      var $this     = $(this),
-          offsetTop = $this.offset().top;
+//     // Showed...
+//     $(".revealOnScroll:not(.progress)").each(function () {
+//       var $this     = $(this),
+//           offsetTop = $this.offset().top;
 
-      if (scrolled + win_height_padded > offsetTop) {
-        if ($this.data('timeout')) {
-          window.setTimeout(function(){
-            $this.addClass('progress ' + $this.data('animation'));
-          }, parseInt($this.data('timeout'),10));
-        } else {
-          $this.addClass('progress ' + $this.data('animation'));
-        }
-      }
-    });
-    // Hidden...
-   $(".revealOnScroll.progress").each(function (index) {
-      var $this     = $(this),
-          offsetTop = $this.offset().top;
-      if (scrolled + win_height_padded < offsetTop) {
-        $(this).removeClass('progress')
-      }
-    });
-  }
+//       if (scrolled + win_height_padded > offsetTop) {
+//           $this.addClass('progress ');
+//           $("#skills1").show();    
+//       }
+//     });
+//     // Hidden...
+//    $(".revealOnScroll.progress").each(function (index) {
+//       var $this     = $(this),
+//           offsetTop = $this.offset().top;
+//       if (scrolled + win_height_padded < offsetTop) {
+//         $(this).removeClass('progress')
+//         $("#skills1").hide();
+//       }
+//     });
+//   }
 
-  revealOnScroll();
-});
+//   setTimeout(revealOnScroll, 4000);
 
-$(document).ready( function() {
-    $("#skills1").hide(); //hide your div initially
-    var topOfOthDiv = $("#skills1").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#skills1").show(); //reached the desired point -- show div
-        }
+// });
+
+$(document).ready(function($) {
+    $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+        e.preventDefault();
+        
+        // Get the current target hash
+        var target = this.hash;
+        
+        // Animate the scroll bar action so its smooth instead of a hard jump
+        $('html, body').stop().animate({
+            'scrollTop' : $(target).offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
     });
 });

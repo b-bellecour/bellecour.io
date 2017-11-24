@@ -30,7 +30,7 @@ var modules = {
     
       self.trigger.on('click', function (e) {
         e.preventDefault();
-      
+        $('#blurry-wrapper').addClass('modal-trigger');
         var $trigger = $(this);
       
         self.openModal($trigger, $trigger.data('modalId'));
@@ -71,7 +71,7 @@ var modules = {
       
     closeModal: function () {
       var self = this;
-      
+      $('#blurry-wrapper').removeClass('modal-trigger');
       $('.modal-show').removeClass('modal-show');
       modules.$html
         .removeClass('modal-show')
@@ -83,4 +83,5 @@ var modules = {
 }
 
 modules.init();
+
 

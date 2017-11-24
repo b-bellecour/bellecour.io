@@ -1622,7 +1622,7 @@
 
 	}
 
-	body {
+	body:not(.front) {
 		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -1643,7 +1643,7 @@
 
 /* Type */
 
-	body {
+	body:not(.front) {
 		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
 	}
@@ -3231,7 +3231,7 @@
 
 /* Nav */
 
-	#nav {
+	#nav:not(.logosh) {
 		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -3253,7 +3253,7 @@
 			color: #636363;
 		}
 
-		#nav a:hover {
+		#nav a:not(.logosh):hover {
 			color: #636363;
 		}
 
@@ -3288,7 +3288,7 @@
 			list-style: none;
 		}
 
-			#nav ul li {
+			#nav ul li:not(.logosh) {
 				-moz-transition: margin 0.2s ease;
 				-webkit-transition: margin 0.2s ease;
 				-ms-transition: margin 0.2s ease;
@@ -3299,7 +3299,7 @@
 				vertical-align: middle;
 			}
 
-				#nav ul li a {
+				#nav ul li a:not(.logosh) {
 					-moz-transition: font-size 0.2s ease;
 					-webkit-transition: font-size 0.2s ease;
 					-ms-transition: font-size 0.2s ease;
@@ -3322,7 +3322,7 @@
 						box-shadow: none;
 					}
 
-		#nav.alt {
+		#nav.alt:not(.logosh) {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
@@ -3336,8 +3336,7 @@
 				margin: 0 0.175em;
 			}
 
-				#nav.alt ul li a {
-					font-size: 0.9em;
+				#nav.alt ul li a:not(.logosh) {
 				}
 
 		@media screen and (max-width: 736px) {

@@ -12,13 +12,13 @@ var ctx = cvs.getContext('2d');
 
 // Set font, size & number of columns
 var font = 'arial';
-var fontSize = 20;
+var fontSize = 14;
 ctx.font = fontSize + 'px ' + font;
 var cols = cvs.width / fontSize;
 
 // Characters
 var charSet;
-charSet = '0123456789ABCDEF'; // Hex
+charSet = '0123456789ABCDEF脆弱性何故処入隠すひらがなカタカナ文字化け'; // Hex
 charSet = charSet.split(''); // Convert string to array
 
 // One drop per column, row set randomly
@@ -55,9 +55,9 @@ function rain() {
 function randColour()
 {
   return'rgb(' + 
-    Math.floor(Math.random() * 2500) + ',' + 
-    Math.floor(Math.random() * 2500) + ',' + 
-    Math.floor(Math.random() * 25000) + ')';
+    Math.floor(Math.random() * 10000) + ',' + 
+    Math.floor(Math.random() * 5000) + ',' + 
+    Math.floor(Math.random() * 10000) + ')';
 }
 
 //hider

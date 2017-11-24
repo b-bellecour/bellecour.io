@@ -1,39 +1,25 @@
-<!DOCTYPE HTML>
-<!--
-	bellecour.io
--->
-<html>
+
+	<canvas id='cvs'></canvas>
+	<div id="blurry-wrapper">
 	<head>
+	
 		<title>Baptiste BELLECOUR</title>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<!-- Header -->
-					<header id="header" class="alt" style="background-color: rgba(0, 0, 0, 0.6);">
-						<div>
-						<!--<span class="logo"><img src="images/logo.svg" alt="" /></span>-->
-						<h1 style="text-shadow:2px 2px #000000;"> Baptiste BELLECOUR </h1>
-						<p>Please choose a language</p>
-						</div>
-						<a class="button" id="unhide" href="#intro">english</a> <button id="unhide" href="#intro">français</button> <button id="unhide" href="#intro">日本語</button>
-					</header>
-
-			<div id="hide" style="display:none">
-			<canvas id='cvs'></canvas>
-
-
 				<!-- Nav -->
 					<nav id="nav">
 						<div>
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
+							<div style="text-align:left;"><li><a class="logosh" href="#intro">[user@bellecour.io]~$</a></li></div>
+							<div style=" float: right; color: #6a6a6a;">
 							<li><a href="#first">Resume</a></li>
 							<li><a href="#second">Projects</a></li>
-							<li><a href="#cta">Papers</a></li>
+							<li><a href="#cta">Papers</a></li></div>
 						</ul>
 					</div>
 					</nav>
@@ -60,11 +46,12 @@
 											<li><a href="#first" class="button">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/me.jpg" alt="" /></span>
+									<span class="image"><img src="../images/me.jpg" alt="" /></span>
 								</div>
 							</section>
 
 						<!-- First Section -->
+							
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Employement & Education</h2>
@@ -242,7 +229,6 @@
 									</header>
 								        <div class="spotlight">
 								            <div class="content">
-
 								                <!--  Container  --> 
 									                <ul class="progress revealOnScroll" id="skills1">
 									                    <!--  Item  -->
@@ -416,6 +402,7 @@
 					
 
 						<!-- Projects -->
+
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Projects</h2>
@@ -480,40 +467,7 @@
 								  </div>
 								</div>
 							</section>
-
-						<!-- Modal -->
-						<div id="modal-1" class="modal" data-modal-effect="fadescale">
-						  <div class="modal-content">
-						  	<div style="text-align:right;">
-								<a href="#" style="border-bottom:none;" > 
-									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
-								</a>
-							</div>
-						  	<div> {% include modal/incap-modal.md %} </div>
-						  </div>
-						</div>
-
-						<div id="modal-2" class="modal" data-modal-effect="fadescale">
-						  <div class="modal-content">
-						  	<div style="text-align:right;">
-								<a href="#" style="border-bottom:none;" > 
-									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
-								</a>
-							</div>
-						  	<div> {% include modal/fireEye-modal.md %} </div>
-						  </div>
-						</div>
-
-						<div id="modal-3" class="modal" data-modal-effect="fadescale">
-						  <div class="modal-content">
-						  	<div style="text-align:right;">
-								<a href="#" style="border-bottom:none;" > 
-									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
-								</a>
-							</div>
-						  	<div> {% include modal/arp-modal.md %} </div>
-						  </div>
-						</div>
+						
 						<!-- Get Started -->
 
 
@@ -563,6 +517,42 @@
 
 			</div>
 			</div>
-
+		</div>
 	</body>
-</html>
+	</div>
+	<!-- Modal -->
+						<div id="modal-1" class="modal main" data-modal-effect="fadescale">
+						  <div class="modal-content">
+						  	<div style="text-align:right;">
+								<a href="#" style="border-bottom:none;" > 
+									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
+								</a>
+							</div>
+						  	<div> {% include modal/incap-modal.html %} </div>
+						  </div>
+						</div>
+
+						<div id="modal-2" class="modal" data-modal-effect="fadescale">
+						  <div class="modal-content">
+						  	<div style="text-align:right;">
+								<a href="#" style="border-bottom:none;" > 
+									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
+								</a>
+							</div>
+						  	<div> {% include modal/fireEye-modal.html %} </div>
+						  </div>
+						</div>
+
+						<div id="modal-3" class="modal" data-modal-effect="fadescale">
+						  <div class="modal-content">
+						  	<div style="text-align:right;">
+								<a href="#" style="border-bottom:none;" > 
+									<button style=" border-radius: 15px; min-width: 2em; padding: 0px 0 2px 0; height: 2em; line-height: 0;" data-dismiss="modal" class="modal-close">x</button>
+								</a>
+							</div>
+						  	<div> {% include modal/arp-modal.html %} </div>
+						  </div>
+						</div>
+
+
+						
