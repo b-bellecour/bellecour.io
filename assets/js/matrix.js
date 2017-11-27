@@ -18,7 +18,7 @@ var cols = cvs.width / fontSize;
 
 // Characters
 var charSet;
-charSet = '0123456789ABCDEF脆弱性何故処入隠すひらがなカタカナ文字化け'; // Hex
+charSet = '0123456789ABCDEF脆弱性%$カタカナ文字化け'; // Hex
 charSet = charSet.split(''); // Convert string to array
 
 // One drop per column, row set randomly

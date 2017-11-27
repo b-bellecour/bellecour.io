@@ -20,6 +20,7 @@ nav ul {
     text-align: left;
     /*text-shadow: 0.1px 0.1px 1px black;*/
     line-height: 2em;
+    font-weight: 400;
     border-bottom: 0;
     font-size: 1.1em;
     background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0) !important;
@@ -48,6 +49,8 @@ div.blur:before{
  -webkit-filter: blur(5px);
  -moz-filter: blur(5px);
  }
+
+
 
 
 /* Frontpage */

@@ -14,6 +14,81 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.name {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	text-align: center;
+	font-size: 2.8em;
+	position: auto;
+	top: 45%;
+	opacity: 0;
+	color: #fff;
+	margin: 0 0 0.5em 0; 
+}
+
+@media screen and (max-width: 1040px) {
+.front-lang {
+    padding-top: 120px;
+ }
+}
+
+#hideMe {
+    -moz-animation: hideAnimation 2s ease-in 11s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation 2s ease-in 11s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation 2s ease-in 11s forwards;
+    /* Opera */
+    animation: hideAnimation 2s ease-in 11s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+#hideMe2 {
+    -moz-animation: hideAnimation2 2s ease-in 8s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation2 2s ease-in 8s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation2 2s ease-in 8s forwards;
+    /* Opera */
+    animation: hideAnimation2 2s ease-in 8s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+#hideMe3 {
+    -moz-animation: hideAnimation 2s ease-in 13s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation 2s ease-in 13s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation 2s ease-in 13s forwards;
+    /* Opera */
+    animation: hideAnimation 2s ease-in 13s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes hideAnimation {
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes hideAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideAnimation2 {
+    to {
+        opacity: 0.3;
+    }
+}
+@-webkit-keyframes hideAnimation2 {
+    to {
+        opacity: 0.2;
+    }
+}
+
 .main-wrap {
 	position: relative;
 	display: flex;
@@ -28,29 +103,6 @@ body {
 	background-size: 75% auto;
 }
 
-
-/* Buttons */
-
-.btn {
-	margin: 0;
-	padding: 0;
-	cursor: pointer;
-	border: none;
-	background: none;
-}
-
-.btn:focus {
-	outline: none;
-}
-
-.btn--search {
-	font-size: 1.5em;
-}
-
-.btn--hidden {
-	pointer-events: none;
-	opacity: 0;
-}
 
 
 /* Reset Search Input */
@@ -158,7 +210,6 @@ span.green{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
 }
 
 .btn--search-close {
@@ -256,44 +307,44 @@ span.green{
 	opacity: 1;
 }
 .js .search--open .terminal.binding .terminal__line{
-	width: 200ch;
+	width: 50ch;
 }
 .js .search--open .terminal__line:first-child {
-	width: 20ch;
+	width: 60ch;
 }
 .js .search--open .terminal__line:nth-child(2),
 .js .search--open .terminal__line:nth-child(3) {
-	width: 27ch;
+	width: 50ch;
 }
 .js .search--open .terminal__line:nth-child(4) {
-	width: 28ch;
+	width: 50ch;
 }
 .js .search--open .terminal__line:nth-child(5) {
-	width: 7ch;
+	width: 50ch;
 }
 .js .search--open .terminal__line:nth-child(6) {
-	width: 16ch;
+	width: 50ch;
 }
 .js .search--open .terminal__line:nth-child(7) {
-	width: 14ch;
+	width: 30ch;
 }
 .js .search--open .terminal__line:nth-child(8) {
-	width: 19ch;
+	width: 30ch;
 }
 .js .search--open .terminal__line:nth-child(9) {
-	width: 10ch;
+	width: 30ch;
 }
 .js .search--open .terminal__line:nth-child(10) {
-	width: 13ch;
+	width: 30ch;
 }
 .js .search--open .terminal__line:nth-child(11) {
-	width: 12ch;
+	width: 40ch;
 }
 .js .search--open .terminal__line:nth-child(12) {
 	width: 45ch;
 }
 .js .search--open .terminal__line:nth-child(13) {
-	width: 145ch;
+	width: 200ch;
 }
 
 
@@ -460,7 +511,7 @@ canvas{
 }
 
 
-/* Type animation by Lea Verou http://lea.verou.me/2012/02/simpler-css-typing-animation-with-the-ch-unit/ */
+
 @keyframes typing {
 	from {
 		width: 0;

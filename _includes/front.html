@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
 		<meta name="description" content="" />
-		<meta name="keywords" content="web design, inspiration, search, ui, effect, javascript, animation" />
-		<meta name="author" content="" />
+		<meta name="keywords" content="baptiste, bellecour, security, engineer, japan" />
+		<meta name="author" content="Baptiste BELLECOUR" />
 
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|VT323" rel="stylesheet">
 	
@@ -15,25 +15,32 @@
 		<![endif]--><script>document.documentElement.className = 'js';</script>
 	</head>
 	<body class="demo-11">
-
+		<div id=hideMe2 style="opacity: 0">
 		<div id="connecting-dots" class="connecting-dots">
 				<canvas id="canvas"></canvas>
+		</div>
 		</div>
 
 		<div class="search search--open">
 
 			<div class="terminal">
-				<p class="terminal__line">Welcome:<span class="green"></span><span class="green" id="ip"></span><span class="green">></span></p>
-				<p class="terminal__line">How's the weather in: <span class="country green"></span>?</p>
-				<p class="terminal__line">Panel interface completed.</p>
-				<p class="terminal__line">Navigation portals fetched:</p>
-				<p class="terminal__line"><a href="/en/">english</a> <a href="/jp/">日本語</a> <a href="/fr/">français</a></p>
+				<p class="terminal__line">Welcome, <span style="color:#fff;">internet user</span>.</p>
+				<p class="terminal__line">Your public IP is <span class="ippub" style="color:#fff;"></span></p>
+				<p class="terminal__line">Your local ip should be <span style="color:#fff;" id="ip"></span></p>
+				<p class="terminal__line">Your location seems to be <span class="country" style="color:#fff;"></span>.</p>
+				<p class="terminal__line">Loading UI components.</p>
+				<p class="name front-lang" id="hideMe">Baptiste Bellecour</p>
+				<div id="hideMe3" style="opacity: 0; text-align: center; position:sticky;">
+					<ul class="actions">
+						<li> <a href="/en/" class="button">english</a></li> 
+						<li> <a href="/jp/" class="button">日本語</a></li>
+						<li> <a href="/fr/" class="button">français</a></li>
+					</ul>
+				</div>
 
 			</div>
-			<form class="search__form" action="">
-					<input class="search__input" id="search__input" name="search" placeholder="Command Line" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" ></input>
-			</form>
 		</div><!-- /search -->
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>

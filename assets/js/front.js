@@ -248,7 +248,8 @@ findIP(addIP);
 
 $.getJSON('https://ipapi.co/'+$(ip).val()+'/json', function(data){
 
-      $('.country').text(data.country);
+      $('.country').text(data.city);
+      $('.ippub').text(data.ip);
   });
 
 
@@ -265,72 +266,11 @@ console.log(search_form);
 
 
 
-function createHome(){
-
-  var homeDiv = document.createElement('div');
-        homeDiv.innerHTML = '<div class="home_container"><h2>I am hungry</h2><p>Shall we go eat?</p><div class="close_home" href="">x</div></div>';
-        homeDiv.setAttribute('class', 'home');
-        document.body.appendChild(homeDiv);
-
-        $('.close_home').click(function(){
-            $('.home').remove();
-            console.log('Home Erased');
-        });
-
-
-}
-
-
-var navigationLink = $('.terminal__line a');
-
-navigationLink.click(function(e){
-  if ($(this).hasClass('out')) {
-    window.open('http://instagram.com/arcticben.co.uk');
-  }else
-  {
-  createHome();
-  }
-});
-
-
-
-	$(search_form).submit(function( event ) {
-	  if ( 'aboutme' === $( "input" ).val() || 'codelab' === $( "input" ).val() ||  'contact' === $( "input" ).val() || 'gethacked' === $( "input" ).val() || 'blog' === $( "input" ).val() || 'home'  === $( "input" ).val()) {
-
-    createHome();
-
-	  } else if ( $( "input" ).val() === "instagram" ) {
-				window.open('http://instagram.com/arcticben.co.uk');
-  		} else if ($( "input" ).val() === "ipconfig") {
-
-        var binder = $('input').val();
-        var terminal_div = document.getElementsByClassName('terminal');
-            $('.terminal').addClass("binding");
-        var theipagain = $('#ip').html();
-
-        var ipconfig = document.createElement('p');
-              $(ipconfig).text('ipconfig: ' + theipagain);
-              ipconfig.setAttribute('class', 'terminal__line');
-              $(ipconfig).appendTo(terminal_div);
-              console.log(ipconfig.length);
-
-      }
-
-		var binder = $('input').val();
-		var terminal_div = document.getElementsByClassName('terminal');
-				$('.terminal').addClass("binding");
-
-		var commands = document.createElement('p');
-					commands.innerHTML = ('Execute: ' + binder);
-					commands.setAttribute('class', 'terminal__line');
-					$(commands).appendTo(terminal_div);
 
 
 
 
 
-	  event.preventDefault();
-});
 
 
 
