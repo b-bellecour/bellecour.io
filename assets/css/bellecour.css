@@ -55,19 +55,6 @@ div.blur:before{
 
 /* Frontpage */
 
-.front{
-    background-color: #000; 
-    background-image:-webkit-radial-gradient(circle,#1b1b1b 6.2%,#000 80%)!important;
-    background-image:-moz-radial-gradient(circle,#1b1b1b 6.2%,#000 80%)!important;
-    background: no-repeat center center fixed;
-    background-size: cover;
-      -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    opacity:100;
-    background-repeat: no-repeat;
-  }
-
 
 /* Timeline  */
 /* -------------------------------- 
@@ -423,6 +410,19 @@ Main components
   }
 }
 
+@media only screen and (min-width: 1680px) {
+  .cd-timeline-content .cd-date {
+    position: absolute;
+    margin-left: 190px;
+    width: 28%;
+    left: 79%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
@@ -579,14 +579,13 @@ Main components
   display: inline-block;
   padding: 0;
   text-align: center;
+  max-width: 1024px;
 }
 .progress > li {
   display: inline-block;
   position: relative;
   text-align: center;
   color: #93a2ac;
-  font-family: Lato;
-  font-weight: 100;
   margin: 2rem;
 }
 .progress > li:before {
@@ -595,6 +594,7 @@ Main components
   width: 100%;
   bottom: -2rem;
   font-weight: 400;
+  font-size: 0.9em
 }
 .progress > li:after {
   content: attr(data-percent);

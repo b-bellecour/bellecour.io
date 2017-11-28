@@ -14,6 +14,20 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.front{
+    background-color: #000; 
+    background-image:-webkit-radial-gradient(circle cover,rgba(27,27,27,1) 30px,rgba(0,0,0,1) 500px)!important;
+    background-image:-moz-radial-gradient(circle cover,rgb(27,27,27,1) 0%,rgb(0,0,0,1) 30%)!important;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+    opacity:100;
+    background-repeat: no-repeat;
+  }
+
+
 .name {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	text-align: center;
@@ -27,7 +41,7 @@ body {
 
 @media screen and (max-width: 1040px) {
 .front-lang {
-    padding-top: 120px;
+    padding-top: 80px;
  }
 }
 
@@ -250,7 +264,7 @@ span.green{
 .terminal__line,
 .search__input {
 	font-family: 'VT323', monospace;
-	font-size: 1.25em;
+	font-size: 15px;
 }
 
 .search__input::-webkit-input-placeholder {
