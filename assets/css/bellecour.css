@@ -56,7 +56,84 @@ div.blur:before{
 
 
 
-/* Frontpage */
+/* loading */
+
+
+
+.title,
+.loading-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5em;
+  letter-spacing: .085em;
+  margin: 4.5rem 0 1rem;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin-top: 1.7rem;
+}
+
+.title,
+.loading-title,
+
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .3em;
+  margin: 10px 0 40px;
+  color: #aaa;
+}
+
+
+
+.page {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 75px auto 0;
+}
+
+.page a {
+  color: #000;
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  background: #000;
+  -webkit-transition: .75s;
+  transition: .75s;
+  z-index: 20000;
+}
+
+.loading-title {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loading-progress {
+  height: 11px;
+  background: #000;
+  top: -11px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+
+
 
 
 /* Timeline  */
