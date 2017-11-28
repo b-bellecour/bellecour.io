@@ -27,6 +27,13 @@ body {
     background-repeat: no-repeat;
   }
 
+.name-main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  top: 0; 
+  position: fixed;
+}
 
 .name {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -36,7 +43,9 @@ body {
 	top: 45%;
 	opacity: 0;
 	color: #fff;
-	margin: 0 0 0.5em 0; 
+	margin: auto;
+
+
 }
 
 @media screen and (max-width: 1040px) {
@@ -46,37 +55,37 @@ body {
 }
 
 #hideMe {
-    -moz-animation: hideAnimation 2s ease-in 11s forwards;
+    -moz-animation: hideAnimation 2s ease-in 7s forwards;
     /* Firefox */
-    -webkit-animation: hideAnimation 2s ease-in 11s forwards;
+    -webkit-animation: hideAnimation 2s ease-in 7s forwards;
     /* Safari and Chrome */
-    -o-animation: hideAnimation 2s ease-in 11s forwards;
+    -o-animation: hideAnimation 2s ease-in 7s forwards;
     /* Opera */
-    animation: hideAnimation 2s ease-in 11s forwards;
+    animation: hideAnimation 2s ease-in 7s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
 
 #hideMe2 {
-    -moz-animation: hideAnimation2 2s ease-in 8s forwards;
+    -moz-animation: hideAnimation2 2s ease-in 5s forwards;
     /* Firefox */
-    -webkit-animation: hideAnimation2 2s ease-in 8s forwards;
+    -webkit-animation: hideAnimation2 2s ease-in 5s forwards;
     /* Safari and Chrome */
-    -o-animation: hideAnimation2 2s ease-in 8s forwards;
+    -o-animation: hideAnimation2 2s ease-in 5s forwards;
     /* Opera */
-    animation: hideAnimation2 2s ease-in 8s forwards;
+    animation: hideAnimation2 2s ease-in 5s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
 
 #hideMe3 {
-    -moz-animation: hideAnimation 2s ease-in 13s forwards;
+    -moz-animation: hideAnimation 2s ease-in 9s forwards;
     /* Firefox */
-    -webkit-animation: hideAnimation 2s ease-in 13s forwards;
+    -webkit-animation: hideAnimation 2s ease-in 9s forwards;
     /* Safari and Chrome */
-    -o-animation: hideAnimation 2s ease-in 13s forwards;
+    -o-animation: hideAnimation 2s ease-in 9s forwards;
     /* Opera */
-    animation: hideAnimation 2s ease-in 13s forwards;
+    animation: hideAnimation 2s ease-in 9s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
@@ -321,10 +330,10 @@ span.green{
 	opacity: 1;
 }
 .js .search--open .terminal.binding .terminal__line{
-	width: 50ch;
+	width: 100ch;
 }
 .js .search--open .terminal__line:first-child {
-	width: 60ch;
+	width: 100ch;
 }
 .js .search--open .terminal__line:nth-child(2),
 .js .search--open .terminal__line:nth-child(3) {
