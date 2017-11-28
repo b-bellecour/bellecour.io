@@ -292,6 +292,7 @@ Main components
 .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
+  font: inherit;
 }
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
@@ -380,6 +381,7 @@ Main components
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
+
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
