@@ -155,12 +155,13 @@ figure:hover div {
 
 @media screen and (max-width: 1024px) {
 .front-lang {
-  padding-top: 80px;
+  padding-bottom: 300px;
 
  }
 
 .word {
   font-size: 1em;
+  padding-bottom: 350px;
   }
 }
 
