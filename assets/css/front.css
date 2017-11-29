@@ -165,7 +165,7 @@ figure:hover div {
 @media screen and (max-width: 1024px) {
 
 .word {
-  font-size: 1em;
+  font-size: 0.8em;
   padding-bottom: 6em;
   }
 }
