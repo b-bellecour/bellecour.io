@@ -663,15 +663,6 @@ canvas{
 	}
 }
 
-/* Close button */
-.btn--search-close {
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-.search--open .btn--search-close {
-	opacity: 1;
-}
 
 /* Search form with input and description */
 
