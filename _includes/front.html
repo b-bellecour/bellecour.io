@@ -13,8 +13,7 @@
 		<!--[if IE]>
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]--><script>document.documentElement.className = 'js';</script>
-	</head>
-<div class="overlay"></div>
+
 	<body class="demo-11">
 		<div id=hideMe2 style="opacity: 0">
 		<div id="connecting-dots" class="connecting-dots">
@@ -25,7 +24,8 @@
 		
 				<div class="name-main">
 					<div class="name" id="hideMe"><div class="word"><span>Baptiste</span>&nbsp; <span> Bellecour</span></div>
-						<ul class="actions lang-selector">
+					<div class="overlay"></div>
+						<ul class="actions lang-selector" id="hideMe3" style="opacity: 0; text-align: center;">
 								<figure>
 								  <div class="front-btn">
 								  	<a href="/en/">
@@ -51,7 +51,7 @@
 						</ul>
 					</div>
 				</div>
-						<div id="hideMe3" style="opacity: 0; text-align: center;">
+						<div >
 
 						</div>
 				
@@ -62,10 +62,9 @@
 				<p class="terminal__line">Fetching your location: <span class="country" style="color:#fff;"></span>.</p>
 				<p class="terminal__line">Initializing reverse TCP payload →  <span class="ippub" style="color:#fff;">done.</span></p>
 				<p class="terminal__line">Injecting UI components into your browser.</p>
-
-
 			</div>
 		</div><!-- /search -->
+		</head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>

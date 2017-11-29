@@ -72,7 +72,7 @@ body {
   transform: translateX(0) scale(1);
 }
 
-.overlay {
+.overlay:not(ul) {
   background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
   background-size: 1000px 2px;
   bottom: 0;
@@ -81,6 +81,8 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1;
+  pointer-events:none;
 }
 
 /* button */
@@ -118,13 +120,11 @@ figure div {
   -webkit-transition: 0.25s;
 }
 
-@media screen and (min-width: 640px) {
-
-	figure:hover div {
-  		transform: rotateX(-90deg);
-	}
-
+figure:hover div {
+  	transform: rotateX(-90deg);
 }
+
+
 
 
 
@@ -140,6 +140,7 @@ figure div {
   font-size: 17pt;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1000;
 }
 
 .front-btn span:nth-child(1) {
@@ -168,30 +169,6 @@ figure div {
 }
 
 #hideMe {
-    -moz-animation: hideAnimation 2s ease-in 7s forwards;
-    /* Firefox */
-    -webkit-animation: hideAnimation 2s ease-in 7s forwards;
-    /* Safari and Chrome */
-    -o-animation: hideAnimation 2s ease-in 7s forwards;
-    /* Opera */
-    animation: hideAnimation 2s ease-in 7s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; 
-}
-
-#hideMe2 {
-    -moz-animation: hideAnimation2 2s ease-in 5s forwards;
-    /* Firefox */
-    -webkit-animation: hideAnimation2 2s ease-in 5s forwards;
-    /* Safari and Chrome */
-    -o-animation: hideAnimation2 2s ease-in 5s forwards;
-    /* Opera */
-    animation: hideAnimation2 2s ease-in 5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; 
-}
-
-#hideMe3 {
     -moz-animation: hideAnimation 2s ease-in 9s forwards;
     /* Firefox */
     -webkit-animation: hideAnimation 2s ease-in 9s forwards;
@@ -199,6 +176,30 @@ figure div {
     -o-animation: hideAnimation 2s ease-in 9s forwards;
     /* Opera */
     animation: hideAnimation 2s ease-in 9s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+#hideMe2 {
+    -moz-animation: hideAnimation2 2s ease-in 7s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation2 2s ease-in 7s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation2 2s ease-in 7s forwards;
+    /* Opera */
+    animation: hideAnimation2 2s ease-in 7s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+#hideMe3 {
+    -moz-animation: hideAnimation 2s ease-in 10s forwards;
+    /* Firefox */
+    -webkit-animation: hideAnimation 2s ease-in 10s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAnimation 2s ease-in 10s forwards;
+    /* Opera */
+    animation: hideAnimation 2s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
