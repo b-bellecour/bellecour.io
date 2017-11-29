@@ -93,13 +93,6 @@ padding-top:24em;
 z-index: 1000;
 }
 
-@media only screen and (max-width: 1024px){
-	.lang-selector{
-		font-size:16px; 
-		padding-top:18em; 
-		z-index: 1000;
-		}
-}
 
 figure {
   width: 200px;
@@ -118,8 +111,10 @@ figure div {
   -webkit-transition: 0.25s;
 }
 
+@media screen and (min-width: 640px) {
 figure:hover div {
   transform: rotateX(-90deg);
+}
 }
 
 .front-btn span {
@@ -144,26 +139,37 @@ figure:hover div {
 
 .front-btn span:nth-child(2) {
   color: #000;
+  display:hidden;
   background: #fff;
   transform: rotateX(90deg) translate3d(0, 0, 30px);
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
 
 
+@media screen and (max-width: 640px) {
+
+　　figure:hover div {
+ 　 　transform: rotateX(0deg);
+　　}
+}
+
+
+@media screen and (max-width: 1024px) {
+　　.front-lang {
+  　　padding-bottom: 330px;
+　　}
+
+　　.word {
+  　　font-size: 1em;
+  　　padding-bottom: 350px;
+ 　}
+}
+
+
 
 /* delay item apearance */
 
-@media screen and (max-width: 1024px) {
-.front-lang {
-  padding-bottom: 330px;
 
- }
-
-.word {
-  font-size: 1em;
-  padding-bottom: 350px;
-  }
-}
 
 #hideMe {
     -moz-animation: hideAnimation 2s ease-in 7s forwards;
