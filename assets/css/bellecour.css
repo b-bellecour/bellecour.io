@@ -63,10 +63,7 @@ div.blur:before{
 .title,
 .loading-title {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 5em;
-  letter-spacing: .085em;
-  margin: 4.5rem 0 1rem;
+  font-size: 1em;
 }
 
 .subtitle {
@@ -82,7 +79,6 @@ div.blur:before{
   text-align: center;
   text-transform: uppercase;
   display: block;
-  letter-spacing: .3em;
   margin: 10px 0 40px;
   color: #aaa;
 }
@@ -132,6 +128,84 @@ div.blur:before{
   transition: .35s;
 }
 
+/* flying table */
+
+@keyframes handturning {
+  0%   { transform: rotate(70deg) translate(-0.5em,1em); }
+  6%   { transform: rotate(120deg) translate(0.5em,0.5em); }
+  9%   { transform: rotate(120deg) translate(-0.5em,1em); }
+  12% { transform: rotate(0deg) translate(0em, 0em);}
+  100% { transform: rotate(0deg) translate(0em, 0em); }
+}
+@keyframes slighttiltbody2{
+    0%   { transform: translate(0em, 0em) rotateY(180deg)}
+    15%   { transform: translate(0.1em, 0.2em) rotateY(180deg)}
+    30%  { transform: translate(0.3em, 0em) rotateY(180deg)}
+    50%   { transform: translate(0.4em, 0.2em) rotateY(180deg)}
+    60%   { transform: translate(0.2em, 0.3em) rotateY(180deg)}
+    100% { transform: translate(0.1em, 0em) rotateY(180deg)}
+}
+
+@keyframes slighttiltbody{
+    0%   { transform: rotate(0deg)}
+    6%   { transform: rotate(0deg)}
+    9% { transform: rotate(5deg)}
+    12%   { transform: rotate(-5deg)  }
+    40%   { transform: rotate(-17deg)}
+    100% { transform: rotate(0deg)  }
+}
+@keyframes wildrotate {
+  0%   { transform: rotate(180deg)   translateY(0em); }
+  9%   { transform: rotate(180deg)  translateY(0em);}
+
+  100% { transform: rotate(-1980deg) translateY(0em);}
+}
+@keyframes slighttilt{
+    0%   { transform:   translate(0em, 0em);}
+    25%   { transform:   translate(0.3em,  0.5em);}
+    60%   { transform:  translate(0.1em,  -0.2em);}
+    100% { transform:   translate(-0.2em,  0.1em);}
+}
+@keyframes shake {
+    0%   { transform:   rotate(0deg);}
+    50% { transform:   rotate(-45deg);}
+    100% { transform:   rotate(0deg);}
+}
+@keyframes flyup {
+  0%   { transform:   translateY(0em)  scale(1);}
+  9%   { transform:  translateY(0em)  scale(1);}
+  40%   { transform:  translateY(-3em)  scale(1.6);}
+  100% { transform: translateY(0em)  scale(1);}
+}
+.turning-hand {
+  transform-origin: bottom;
+  animation: handturning 4s infinite
+  ;
+  display: inline-block;
+}
+.turning-body {
+  display: inline-block;
+  animation: slighttiltbody 4s infinite ease-out;
+}
+
+.flying-table-outer {
+    display: inline-block;
+    animation: flyup 4s infinite ease-out;
+}
+.flying-table {
+  display: inline-block;
+  transform: rotate(180deg);
+  animation: wildrotate 4s infinite ease-out;
+}
+.please-wait{
+  display: inline-block;
+ /* transform-origin: right bottom;
+  transform: rotate(180deg);
+  animation: slighttilt 4s infinite ease-out;*/
+}
+.ascii-loading{
+  padding: 3em;
+}
 
 
 
