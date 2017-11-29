@@ -34,6 +34,7 @@ body {
   top: 0; 
   position: fixed;
 }
+/*main name*/
 
 .name {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -44,14 +45,123 @@ body {
 	opacity: 0;
 	color: #fff;
 	margin: auto;
-
-
 }
 
-@media screen and (max-width: 1040px) {
+.word {
+  bottom: 0;
+  color: #fff;
+  font-size: 1.6em;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
+  top: 0
+}
+
+.word span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.word .done {
+  color: #fff;
+  transform: translateX(0) scale(1);
+}
+
+.overlay {
+  background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
+  background-size: 1000px 2px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* button */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+.lang-selector{
+font-size:18px; 
+padding-top:24em; 
+z-index: 1000;
+}
+
+@media only screen and (max-width: 1024px){
+	.lang-selector{
+		font-size:16px; 
+		padding-top:18em; 
+		z-index: 1000;
+		}
+}
+
+figure {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  text-align: left;
+}
+
+figure div {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+figure:hover div {
+  transform: rotateX(-90deg);
+}
+
+.front-btn span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 17pt;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.front-btn span:nth-child(1) {
+  color: #fff;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+.front-btn span:nth-child(2) {
+  color: #000;
+  background: #fff;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+
+
+
+/* delay item apearance */
+
+@media screen and (max-width: 1024px) {
 .front-lang {
-    padding-top: 80px;
+  padding-top: 80px;
+
  }
+
+.word {
+  font-size: 1em;
+  }
 }
 
 #hideMe {
@@ -337,7 +447,7 @@ span.green{
 }
 .js .search--open .terminal__line:nth-child(2),
 .js .search--open .terminal__line:nth-child(3) {
-	width: 50ch;
+	width: 100ch;
 }
 .js .search--open .terminal__line:nth-child(4) {
 	width: 50ch;

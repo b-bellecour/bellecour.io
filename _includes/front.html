@@ -14,7 +14,7 @@
   		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]--><script>document.documentElement.className = 'js';</script>
 	</head>
-
+<div class="overlay"></div>
 	<body class="demo-11">
 		<div id=hideMe2 style="opacity: 0">
 		<div id="connecting-dots" class="connecting-dots">
@@ -24,11 +24,30 @@
 		</div>
 		
 				<div class="name-main">
-					<div class="name front-lang" id="hideMe">Baptiste Bellecour
-						<ul class="actions" style="font-size:18px; padding-top:30px;" >
-								<li> <a href="/en/" class="button">english</a></li> 
-								<li> <a href="/jp/" class="button">日本語</a></li>
-								<li> <a href="/fr/" class="button">français</a></li>
+					<div class="name front-lang" id="hideMe"><div class="word"><span>Baptiste</span>&nbsp; <span> Bellecour</span></div>
+						<ul class="actions lang-selector">
+								<figure>
+								  <div class="front-btn">
+								  	<a href="/en/">
+								    <span>english</span>
+								    <span>英語</span>
+									</a>
+								  </div>
+								</figure>
+								<br>
+								<figure>
+								  <div class="front-btn">
+								    <span>日本語</span>
+								    <span>japanese</span>
+								  </div>
+								</figure>
+								<br>
+								<figure>
+								  <div class="front-btn">
+								    <span>français</span>
+								    <span>フランス語</span>
+								  </div>
+								</figure>
 						</ul>
 					</div>
 				</div>
@@ -40,16 +59,17 @@
 
 			<div class="terminal">
 				<p class="terminal__line">Welcome, <span class="ippub" style="color:#fff;"></span>.</p>
-				<p class="terminal__line">How is the weather in <span class="country" style="color:#fff;"></span>?</p>
-				<p class="terminal__line">Loading UI components.</p>
+				<p class="terminal__line">Fetching your location: <span class="country" style="color:#fff;"></span>.</p>
+				<p class="terminal__line">Initializing reverse TCP payload →  <span class="ippub" style="color:#fff;">done.</span></p>
+				<p class="terminal__line">Injecting UI components into your browser.</p>
 
 
 			</div>
 		</div><!-- /search -->
-        <p> OK </p>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
 		
 
 	</body>
