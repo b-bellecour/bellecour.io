@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -1685,7 +1680,6 @@
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 		color: inherit;
 	}
 
@@ -3247,6 +3241,7 @@
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3339,7 +3334,7 @@
 				#nav.alt ul li a:not(.logosh) {
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 745px) {
 
 			#nav {
 				display: none;

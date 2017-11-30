@@ -9,11 +9,9 @@
 }
 
 body {
-	font-family: 'Inconsolata', 'Monaco', monospace;
 	overflow: hidden;
 	margin: 0;
 	color: #a0a2ae;
-	background: #000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -181,7 +179,7 @@ figure:hover div {
 	  border: 1px solid #fff;
 	  font-family: 'Source Sans Pro',sans-serif;
 	  font-weight: 600;
-	  line-height: 26px;
+	  line-height: 25px;
 	  font-size: 11pt;
 	  text-align: center;
 	  text-transform: uppercase;
