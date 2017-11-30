@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Yellowtail");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,700,900");
+
 *,
 *::after,
 *::before {
@@ -27,7 +31,7 @@ body {
     background-repeat: no-repeat;
   }
 
-.name-main {
+.name-container {
   height: 100%;
   width: 100%;
   display: grid;
@@ -37,10 +41,8 @@ body {
 /*main name*/
 
 .name {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	text-align: center;
 	font-size: 2.8em;
-	position: auto;
 	top: 45%;
 	opacity: 0;
 	color: #fff;
@@ -48,8 +50,9 @@ body {
 }
 
 .word {
+ font-family: "Orbitron", sans-serif;
   bottom: 0;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   color: #fff;
   font-size: 1.6em;
@@ -92,16 +95,30 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 .lang-selector{
-font-size:18px; 
-padding-top:24em; 
+font-size:18px;  
 z-index: 1000;
+opacity: 0; 
+text-align: center;
+line-height: 0px;
+height: 0;
+padding-top:150px;
+
 }
 
 @media only screen and (max-width: 1024px){
 	.lang-selector{
 		font-size:16px; 
-		padding-top:14em; 
 		z-index: 1000;
+		padding-top:100px;
+		}
+}
+
+@media only screen and (max-width: 640px){
+	.lang-selector{
+		font-size:0px; 
+		z-index: 1000;
+		padding-top:100px;
+		line-height: 15px;
 		}
 }
 
@@ -114,6 +131,17 @@ figure {
   text-align: left;
 }
 
+@media only screen and (max-width: 640px){
+	figure {
+	  width: 100px;
+	  height: 26px;
+	  cursor: pointer;
+	  perspective: 500px;
+	  -webkit-perspective: 500px;
+	  text-align: left;
+	}
+}
+
 figure div {
   height: 100%;
   transform-style: preserve-3d;
@@ -122,13 +150,12 @@ figure div {
   -webkit-transition: 0.25s;
 }
 
+
+@media only screen and (min-width: 640px){
 figure:hover div {
   	transform: rotateX(-90deg);
 }
-
-
-
-
+}
 
 .front-btn span {
   width: 100%;
@@ -145,6 +172,24 @@ figure:hover div {
   z-index: 1000;
 }
 
+@media only screen and (max-width: 640px){
+	.front-btn span {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  box-sizing: border-box;
+	  border: 1px solid #fff;
+	  font-family: 'Source Sans Pro',sans-serif;
+	  font-weight: 600;
+	  line-height: 24px;
+	  font-size: 11pt;
+	  text-align: center;
+	  text-transform: uppercase;
+	  z-index: 1000;
+	}
+}
+
+
 .front-btn span:nth-child(1) {
   color: #fff;
   transform: translate3d(0, 0, 30px);
@@ -158,6 +203,14 @@ figure:hover div {
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
 
+@media only screen and (max-width: 640px){
+	.front-btn span:nth-child(2) {
+	  color: #000;
+	  background: none;
+	  border: none;
+	}
+}
+
 
 
 /* delay item apearance */
@@ -166,18 +219,24 @@ figure:hover div {
 
 .word {
   font-size: 0.8em;
-  padding-bottom: 6em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+.word {
+  font-size: 0.5em;
   }
 }
 
 #hideMe {
-    -moz-animation: hideAnimation 2s ease-in 9s forwards;
+    -moz-animation: hideAnimation 2s ease-in 10s forwards;
     /* Firefox */
-    -webkit-animation: hideAnimation 2s ease-in 9s forwards;
+    -webkit-animation: hideAnimation 2s ease-in 10s forwards;
     /* Safari and Chrome */
-    -o-animation: hideAnimation 2s ease-in 9s forwards;
+    -o-animation: hideAnimation 2s ease-in 10s forwards;
     /* Opera */
-    animation: hideAnimation 2s ease-in 9s forwards;
+    animation: hideAnimation 2s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
@@ -195,13 +254,13 @@ figure:hover div {
 }
 
 #hideMe3 {
-    -moz-animation: hideAnimation 2s ease-in 10s forwards;
+    -moz-animation: hideAnimation 2s ease-in 12s forwards;
     /* Firefox */
-    -webkit-animation: hideAnimation 2s ease-in 10s forwards;
+    -webkit-animation: hideAnimation 2s ease-in 12s forwards;
     /* Safari and Chrome */
-    -o-animation: hideAnimation 2s ease-in 10s forwards;
+    -o-animation: hideAnimation 2s ease-in 12s forwards;
     /* Opera */
-    animation: hideAnimation 2s ease-in 10s forwards;
+    animation: hideAnimation 2s ease-in 12s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
 }
@@ -219,12 +278,12 @@ figure:hover div {
 
 @keyframes hideAnimation2 {
     to {
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
 @-webkit-keyframes hideAnimation2 {
     to {
-        opacity: 0.2;
+        opacity: 0.5;
     }
 }
 
