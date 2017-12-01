@@ -8,6 +8,7 @@
      sr.reveal('.cd-picture', { duration: 400 });
      sr.reveal('.skills', { duration: 800 });
      sr.reveal('.actions', { duration: 400 });
+     sr.reveal('.at-grid', { duration: 800 });
      
  
 // trigger on scroll
@@ -51,18 +52,18 @@
 
 // });
 
-$(document).ready(function($) {
-    $('a[href^="#"]').bind('click.smoothscroll', function(e) {
-        e.preventDefault();
+// $(document).ready(function($) {
+//     $('a[href^="#"]').bind('click.smoothscroll', function(e) {
+//         e.preventDefault();
         
-        // Get the current target hash
-        var target = this.hash;
+//         // Get the current target hash
+//         var target = this.hash;
         
-        // Animate the scroll bar action so its smooth instead of a hard jump
-        $('html, body').stop().animate({
-            'scrollTop' : $(target).offset().top
-        }, 900, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
-});
+//         // Animate the scroll bar action so its smooth instead of a hard jump
+//         $('html, body').stop().animate({
+//             'scrollTop' : $(target).offset().top
+//         }, 900, 'swing', function() {
+//             window.location.hash = target;
+//         });
+//     });
+// });

@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import "https://fonts.googleapis.com/css?family=Russo+One";
 
 
 /* Reset */
@@ -1824,7 +1825,7 @@
 		color: #ffffff;
 	}
 
-	a:hover {
+	a:hover:not(.logosh) {
 		color: #ffffff;
 	}
 
@@ -3308,11 +3309,11 @@
 					box-shadow: inset 0 0 0 1px transparent;
 				}
 
-					#nav ul li a:hover {
+					#nav ul li a:hover:not(.logosh) {
 						background-color: rgba(222, 222, 222, 0.25);
 					}
 
-					#nav ul li a.active {
+					#nav ul li a.active:not(.logosh) {
 						background-color: #ffffff;
 						box-shadow: none;
 					}
@@ -3320,7 +3321,7 @@
 		#nav.alt:not(.logosh) {
 			position: fixed;
 			top: 0;
-			padding: 0.5em 1em;
+			padding: 0 0 0 20px;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -3360,7 +3361,7 @@
 			color: #636363;
 		}
 
-		#main a:hover {
+		#main a:hover:not(.logosh) {
 			color: #636363;
 		}
 

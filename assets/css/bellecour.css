@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:400,200');
+@font-face {
+    font-family: logo-font;
+    src: url(../fonts/Streetwear.otf);
+}
+
+
+
 /* hack */
 
 @media screen and (max-width: 745px) {
@@ -20,18 +28,21 @@ nav ul {
 }
 
 .logosh {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Lobster";
+    display: table-row-group;
     width:100%;
     text-align: left;
     /*text-shadow: 0.1px 0.1px 1px black;*/
     line-height: 2em;
     font-weight: 400;
+    color:  #7986CB;
     border-bottom: 0;
-    font-size: 1.1em;
-    background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0) !important;
+    font-size: 32px;
+
+    /*background: linear-gradient(90deg, #607D8B, #607D8B) !important;
     -webkit-background-clip: text !important;
     -background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+    -webkit-text-fill-color: transparent !important;*/
 
 }
 canvas {
@@ -247,7 +258,7 @@ div.blur:before{
     height: 40px;
     width: 40px;
     background: white;
-    left: 7%;
+    left: 4%;
     top: 2%;
     cursor: pointer;
     z-index: 10000;
@@ -281,6 +292,7 @@ div.blur:before{
     width: 40px;
     cursor: pointer;
     right: 6%;
+    z-index: 10000;
   }
 
   .close-menu p {
@@ -300,6 +312,7 @@ div.blur:before{
     
     -o-user-select: none;
     user-select: none;
+    z-index: 10000;
   }
 
   .overlay-menu {
@@ -308,7 +321,7 @@ div.blur:before{
     height: 100%;
     width: 100%;
     background: rgb(0,0,0);
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(96, 125, 139, 1);
     text-align: center;
     z-index: 10000;
   }
@@ -317,11 +330,19 @@ div.blur:before{
     color:#fff;
     left: 0;
     width: auto;
+    line-height: 60px;
+    font-weight: 100;
+    font-size: 0.7em;
+    top:30%;
+  }
+
+  .container-menu {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    top: 0;
     position: fixed;
-    line-height: 80px;
-    top: 25%;
-    font-weight: 400;
-    font-size: 3em;
+
   }
 
   nav div {

@@ -31,6 +31,7 @@ var modules = {
       self.trigger.on('click', function (e) {
         e.preventDefault();
         $('#blurry-wrapper').addClass('modal-trigger');
+        $('#mobile').addClass('hiderino');
         var $trigger = $(this);
       
         self.openModal($trigger, $trigger.data('modalId'));
@@ -73,6 +74,7 @@ var modules = {
       var self = this;
       $('#blurry-wrapper').removeClass('modal-trigger');
       $('.modal-show').removeClass('modal-show');
+      $('#mobile').removeClass('hiderino');
       modules.$html
         .removeClass('modal-show')
         .removeAttr('data-modal-effect');
