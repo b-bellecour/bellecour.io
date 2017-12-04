@@ -3321,7 +3321,7 @@
 		#nav.alt:not(.logosh) {
 			position: fixed;
 			top: 0;
-			padding: 0 0 0 20px;
+			padding: 3px 3px 3px 20px;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
