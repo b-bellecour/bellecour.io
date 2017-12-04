@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:400,200');
-@font-face {
-    font-family: logo-font;
-    src: url(../fonts/Streetwear.otf);
-}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 
 
 
@@ -27,17 +24,15 @@ nav ul {
             column-gap: 2em;
 }
 
+/* animated logo */
+
 .logosh {
-    font-family: "Lobster";
-    display: table-row-group;
+    display: flex;
     width:100%;
     text-align: left;
     /*text-shadow: 0.1px 0.1px 1px black;*/
     line-height: 2em;
-    font-weight: 400;
-    color:  #7986CB;
     border-bottom: 0;
-    font-size: 32px;
 
     /*background: linear-gradient(90deg, #607D8B, #607D8B) !important;
     -webkit-background-clip: text !important;
@@ -45,6 +40,55 @@ nav ul {
     -webkit-text-fill-color: transparent !important;*/
 
 }
+
+@-webkit-keyframes logo {
+  from {
+    stroke-dashoffset: -2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes logo {
+  from {
+    stroke-dashoffset: -2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#texto {
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+  stroke-dasharray: 2000, 2000;
+  -webkit-animation: logo 4s both;
+          animation: logo 4s both;
+}
+
+
+
+.container-logo {
+}
+
+.text-logo {
+  font-weight:100;
+  font-size:16px;
+  color:#002d48;
+  font-family:'Ubuntu';
+  text-transform: uppercase;
+  height:100%;
+  padding-top: 5px;
+}
+.dud{
+  color:#002d48;
+}
+
+
+/* matrice binaire canvs */
+
 canvas {
   width: 100%;
   height: 100%;
@@ -68,8 +112,6 @@ div.blur:before{
  -webkit-filter: blur(5px);
  -moz-filter: blur(5px);
  }
-
-
 
 
 /* loading */
@@ -258,8 +300,8 @@ div.blur:before{
     height: 40px;
     width: 40px;
     background: white;
-    left: 4%;
-    top: 2%;
+    left: 5px;
+    top: 5px;
     cursor: pointer;
     z-index: 10000;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -320,8 +362,7 @@ div.blur:before{
     position: fixed;
     height: 100%;
     width: 100%;
-    background: rgb(0,0,0);
-    background: rgba(96, 125, 139, 1);
+    background: #002D48;
     text-align: center;
     z-index: 10000;
   }
@@ -333,7 +374,7 @@ div.blur:before{
     line-height: 60px;
     font-weight: 100;
     font-size: 0.7em;
-    top:30%;
+    top:20%;
   }
 
   .container-menu {
@@ -348,7 +389,7 @@ div.blur:before{
   nav div {
     font-size: 4em;
     list-style: none;
-    margin-top: 5%;
+    margin-top: -25%;
   }
 
   nav div a {
