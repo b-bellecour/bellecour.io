@@ -1825,7 +1825,7 @@
 		color: #ffffff;
 	}
 
-	a:hover:not(.logosh) {
+	a:hover:not(.logosh):not(.footerino ul li a .button) {
 		color: #ffffff;
 	}
 
@@ -1833,7 +1833,7 @@
 		color: #ffffff;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2:not(.footerino h2), h3, h4, h5, h6 {
 		color: #ffffff;
 	}
 
@@ -1978,7 +1978,7 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
+	.button:not(.footerino ul li a .button) {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 		color: #ffffff !important;
@@ -2398,7 +2398,7 @@
 
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		/*color: #ffffff; */
 	}
 
 		.icon.alt:hover {
@@ -2504,6 +2504,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			text-align: center;
 		}
 
 			ul.icons li {
@@ -2630,7 +2631,7 @@
 
 		dl.alt dt {
 			display: block;
-			width: 3em;
+			width: 5em;
 			margin: 0;
 			clear: left;
 			float: left;
@@ -2651,7 +2652,7 @@
 	}
 
 	dl dt {
-		color: #ffffff;
+		/*color: #ffffff; */
 	}
 
 /* Section/Article */
@@ -2840,7 +2841,7 @@
 		.features li {
 			width: calc(33.33333% - 2em);
 			margin-left: 2em;
-			margin-top: 3em;
+			/* margin-top: 3em; */
 			padding: 0;
 		}
 
