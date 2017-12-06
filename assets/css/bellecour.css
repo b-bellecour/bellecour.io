@@ -1108,9 +1108,9 @@ Main components
 }
 
 .at-column:hover .fa-gradient {
-    background: -webkit-linear-gradient(90deg, #a8efbe, #a89cc8, #8cc9f0);
-    background: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-    background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background: -webkit-linear-gradient(90deg, #002d48, #3498db);
+    background: -ms-linear-gradient(90deg, #002d48, #3498db);
+    background: linear-gradient(90deg, #002d48, #3498db);
            -webkit-background-clip: text;
            -webkit-text-fill-color: transparent;
 }
