@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/bbellecour
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bellecour.io
+  * I am bbellecour (https://keybase.io/bbellecour) on keybase.
+  * I have a public key with fingerprint 97B0 98A9 1EA0 2041 AD20  B35C 1126 5782 879F 0127
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b82adc60b660b0ee1b17d7fecd7736baa15bb68d6b585c03a817175e61a07ce40a",
+      "fingerprint": "97b098a91ea02041ad20b35c11265782879f0127",
+      "host": "keybase.io",
+      "key_id": "11265782879f0127",
+      "kid": "0101fd219a32e9f8f227a28d3e5d32efbb60909aefb400c41f8686625750cdb6c5720a",
+      "uid": "e1a821c9f45bba0ae9acf34be40db119",
+      "username": "bbellecour"
+    },
+    "service": {
+      "hostname": "bellecour.io",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1512530132,
+  "expire_in": 157680000,
+  "prev": "644baf1b8afb88b074f4c00f6ef88d30b388e00ba74a697c2b063d51ec18ec47",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNvAnicbVJrTFRHGN3l0QgtVVqCIAhybRe0BGfu3ucKpUYpYlMo1AdpSpb7mAsX
+YXfZXV7atRW1QiQKBguWUiCNFFIgaY0ghR/yqihNqKDWZjVxg6iV1CrQhCqsnaXl
+XyeZzMw355zvfN/McIC3xl8bqNtXfrxJG60dG6gv0nwUnX39ICGa5TLCcJDYj5YX
+lC8jm924X5UJAwEgCUSOFGSJASKDJ0AIipCVWQVJMsvqGVEQIC2KDCczIs3REtAL
+HGQhSyMGCoCVEAUEIpZQVFMOslqsqsmOZXlWBDwn8BAJgAQUFGScRk9LEJIMzXIk
+x/IKTs1iYq7Z5mFgc6JgQ3GqGcfwwbhs73/wK74BVGQS8oKeRLzCKSTJCiQn6xEt
+44iCDQMe8ALeUQBIFFQ4hmMYkmZpIMkiI9Esuey7aFkOQYEjocQrFC5VAALiBUnR
+UyIuThYh5D1AG7KahAKE0aKI8vORZC6yEo5YAseLVQl5WuupZQWzAvm3IovVbDdL
+5nx8k2u3Wwweor3M4kGWINH4n4ZRVE0ybiQmFCOrTTWbCAPESMmuekQhDUlaD6Ce
+jCVQqUW1IqPqQdAswwE8PGlQMZZkKEoUFChygiJynAhYSqEkABQGKRzuEX4KjkMA
+iAJLCQzPSqQIGL1MQyRBDkmUp802VGgyEwYG2xRysKRNzTEJ9iIrIhyDAx/7aLT+
+mpd8vTwfTOPvt2bl25l+XL0UPPf51e6Jbyozjy9FOVNaWqPotQst5rYeKuLVN+Ib
+LwWfjJxePJLLTT3+6VjNlaFnIeklSWf3vpz1XvWL3pnF/rejfj/vVZg8mf5DzC1X
+TfDpG+6pMefzVfWBl9Zlpc6+ol+/M20u5sPz2/5859s7rY/NdHUEH18QEF3ujr/z
+pO5N34HXcsJnHg4eGcoOf8TTQSN+tfPddeOm2ZuVGldKAiRbzaVBoZ2Nli1hyWd1
+Pfqt/XMXsr7YXaDOnLtd3XCLdRU4cm+8f/TQpsnn2si03RtuD02sDTqcMfTVeCZ5
+jO0K972WvyXR64Opjj9+y12qeffC06odn/7speuudTKO4IxrxtLy5g0+gT0dMREo
+1T3aaVlo2hzV+vXsKV3Hl73Trs59T+o3js4nZQ4+rOMb244U5QUkTmumU3ojR8es
+jp7r7a49OxuptoTpw2FxCT2Omu+7ht1n7g2v2ZEaFr+L9L57IC+0fcE/MI9n/ELm
+6z+r1P2CDoQl5blb9iRGnvFtPlQR8yz/dFfaiZDhm6mFzgejSnsKyvtkZl3edOPV
+kaVNl2fSi52nLBWvd5RUuSZONPRt9O8PdRz17rus2/x0JKOKapWdF7eWxZU3n5y/
+v+3KYszFilX3JnXRd2t/bX8r+xFXv74h6cFcZq9p0DV8zrXrO3fh/b2GrORYtW+o
+/W/tX02Lq2N9to+/+AeOcMOV
+=N2vY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bbellecour
+
+==================================================================
+
