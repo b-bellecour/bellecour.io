@@ -3563,10 +3563,10 @@
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #656565, #3498db);
-			background-image: -webkit-linear-gradient(90deg, #656565, #3498db);
-			background-image: -ms-linear-gradient(90deg, #656565, #3498db);
-			background-image: linear-gradient(90deg, #656565, #3498db);
+			background-image: -moz-linear-gradient(90deg, #8397a3, #8dcaec);
+			background-image: -webkit-linear-gradient(90deg, #8397a3, #8dcaec);
+			background-image: -ms-linear-gradient(90deg, #8397a3, #8dcaec);
+			background-image: linear-gradient(90deg, #8397a3, #8dcaec);
 		}
 
 		#main table tbody tr {
