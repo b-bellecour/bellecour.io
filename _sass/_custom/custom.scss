@@ -1,0 +1,177 @@
+// Custom styles.
+
+
+.post.post-type- {
+	padding-bottom: 15px;
+    margin-top: 10px;
+    border-bottom: 1px dashed #ccc;
+
+}
+
+a {
+    color: #636363;
+    text-decoration: none;
+    border-bottom: none;
+    word-wrap: break-word;
+}
+
+a:hover {
+	color: #8dcaec;
+}
+
+
+@media only screen and (min-width: 640px){
+.post-button {
+    margin: -15px 0 0 40px;
+    position: fixed;
+    display: inline-flex;
+    right: 0;
+	}
+}
+
+@media only screen and (max-width: 640px){
+.post-button {
+    display: none;
+	}
+}
+
+
+.post.use-motion {
+
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 12px;
+    color: white;
+    border: 1px dashed #ccc;
+    text-decoration: none;
+    border-radius: 3px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    color: #636363 !important;
+}
+
+.btn:hover {
+    color: #8dcaec !important;
+}
+
+ .post-button .btn:hover {
+	color: #8dcaec !important;
+	background: #fff;
+	border: 1px dashed #ccc;
+
+}
+
+ .btn a:hover {
+	color: #8dcaec !important;
+	background: #fff;
+	border: 1px dashed #ccc;
+
+}
+
+
+.testrino .post-button .btn {
+    color: #555;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 2;
+    margin: -10px 4px 8px 0px;
+}
+
+.post-title-cat {
+    margin-left: 95px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: inherit;
+}
+.post-header h1.post-title {
+	  font-size: 20px;
+	  font-weight: 100;
+}
+
+
+.post-description {
+	text-align: center;
+	color:#999;
+	font-size: 16px;
+    font-weight: 300;
+}
+
+.post-description-2 {
+	color: #999;
+}
+
+.post-meta {
+	font-size: 12px;
+}
+
+small {
+    color: #bbb;
+    margin-left: 5px;
+}
+
+.tablo{
+	overflow-x:auto;
+}
+
+table {
+	width: auto;
+}
+
+
+@media only screen and (max-width: 400px){
+tr, td {
+    font-size: 10px;
+    width: auto;
+	}
+}
+
+
+@media (max-width: 767px) {
+.post-body {
+    text-align: left;
+}
+}
+
+p {
+    line-height: 25px;
+}
+@media (min-width: 992px){
+.posts-expand .post-body {
+    text-align: left;
+    }
+    }
+
+
+
+.posts-expand .post-tags a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px dashed #ccc;
+    padding: 0px 4px 1px 4px;
+    line-height: 20px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.post-tags a:hover {
+	background: #fff;
+	border: 1px dashed #ccc;
+
+}
+
+.site-author-image {
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    max-width: 190px;
+    height: auto;
+    border: 1px solid #eee;
+}

@@ -1,0 +1,14 @@
+{% assign posts = site.posts %}
+
+
+<h1><small> Lastest </small>posts</h1>
+<br>
+
+<section id="posts" class="testrino">
+  {% for post in posts limit:10 %}
+    {% assign is_index = true %}
+    {% include _macro/post.html %}
+  {% endfor %}
+</section>
+
+{% include _partials/pagination.html %}
