@@ -17,12 +17,12 @@ title: Baptiste BELLECOUR
 email: baptiste@bellecour.io
 description: > # this means to ignore newlines until "baseurl:"
   
-  
-  I have no clue what i'm doing with those keyboards.
+
+  <div class="circle pulse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;live</div>
 
 
 
-alternative_title: 並盛 SEKYUTRITY  
+alternative_title: 並盛 SEKYURITY  
 alternative_subtitle: (ノಠ益ಠ)ノ彡 ┻━┻
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -130,7 +130,7 @@ rss:
 #since: 2015
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: hand-peace-o 
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -161,7 +161,7 @@ menu:
   categories: /blog/categories/
   #about: /about/
   archives: /blog/archives/
-  tags: /blog/tags/
+  #tags: /blog/tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -233,7 +233,7 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
+    family: 
     size:
 
   # Font settings for <code> and code blocks.
@@ -262,7 +262,7 @@ font:
 #   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 social_icons:
-  enable: true
+  enable: false
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
@@ -315,7 +315,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -474,7 +474,7 @@ changyan:
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
-  ua_enable: true
+  ua_enable: false
   admin_enable: false
   user_id: 0
   #admin_nickname: Author

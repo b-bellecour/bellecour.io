@@ -43,6 +43,7 @@ nav ul {
 
 @-webkit-keyframes logo {
   from {
+    fill: none;
     stroke-dashoffset: -2000;
   }
   to {
@@ -51,6 +52,7 @@ nav ul {
 }
 @keyframes logo {
   from {
+    fill: none;
     stroke-dashoffset: -2000;
   }
   to {
@@ -71,6 +73,7 @@ nav ul {
 
 
 .container-logo {
+  padding-left: 10px;
 }
 
 .text-logo {
@@ -1496,6 +1499,11 @@ text-align:left;
 }
 
 /* footer */
+
+.copyright a:hover {
+  color:#8dcaec;
+
+}
 
 
 
