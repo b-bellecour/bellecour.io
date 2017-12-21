@@ -23,7 +23,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 
 alternative_title: 並盛 SEKYURITY  
-alternative_subtitle: (ノಠ益ಠ)ノ彡 ┻━┻
+alternative_subtitle:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: trash_sec
