@@ -1,10 +1,10 @@
 ---
-title: Trouver un appart sans perdre un bras
+title: Trouver un appart
 layout: post
 date: 2015-12-8
 img: appart.jpg
 category: [japon, français]
-description: avec les polissons de chintai.net
+description:  Sans perdre un bras.
 permalink: /blog/appartements/
 tags:
 - logements

@@ -7,7 +7,7 @@ category: [japon, français, langue japonaise]
 description: C'est le moment d'aller se prendre un café.
 permalink: /blog/particules/
 tags :
-- initiation
+
 - langue japonaise
 - particules
 - français

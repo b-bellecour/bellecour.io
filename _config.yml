@@ -13,16 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Baptiste BELLECOUR
+title: Baptiste Bellecour
 email: baptiste@bellecour.io
-description: > # this means to ignore newlines until "baseurl:"
-  
-
-  <div class="circle pulse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;live</div>
-
-
-
-alternative_title: 並盛 SEKYURITY  
+description: Personal website, of cyber security engineer
+author: Baptiste Bellecour
+alternative_title: 並盛セキュリティ<br><span class="special-title">NAMIMORI SEKYURITY</span>
 alternative_subtitle:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -145,7 +140,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle

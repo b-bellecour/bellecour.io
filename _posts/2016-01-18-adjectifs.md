@@ -7,7 +7,7 @@ category: [japon, français, langue japonaise]
 description: Premieres notions de conjuguaison.
 permalink: /blog/adjectifs/
 tags:
-- initiation
+
 - langue japonaise
 - adjectifs
 - français

@@ -7,7 +7,7 @@ category: [japon, français, langue japonaise]
 description: Vous venez d'apprendre vos kana et vous voulez en découdre.
 permalink: /blog/pronoms/
 tags :
-- initiation
+
 - langue japonaise
 - pronoms
 - français

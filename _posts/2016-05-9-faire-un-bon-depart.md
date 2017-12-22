@@ -4,10 +4,10 @@ layout: post
 date: 2016-05-9
 img: start.jpg
 category: [japon, français, langue japonaise]
-description: Vous partez de zero et vous voulez apprendre le japonais ? Bienvenue.
+description: Apprendre la langue japonaise, like a boss.
 permalink: /blog/faire-un-bon-depart/
 tags:
-- initiation
+
 - langue japonaise
 - partir de zero
 - français

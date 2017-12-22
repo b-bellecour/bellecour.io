@@ -1,5 +1,5 @@
 ---
-title: Grammaire JLPT2, langage soutenu.
+title: Grammaire JLPT2
 layout: post
 date: 2014-07-18
 img: gramn2.jpg
@@ -7,9 +7,8 @@ category: [japon, français, langue japonaise]
 description: Les huit points suivants sont principalement utilisés à l'écrit.
 permalink: /blog/langage-soutenu/
 tags:
-- intermediaire
+
 - langue japonaise
-- grammaire
 - français
 - japon
 - JLPT 2

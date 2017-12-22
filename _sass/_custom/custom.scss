@@ -29,6 +29,11 @@ a:hover {
 	}
 }
 
+h2{
+font-size: 16px;
+margin: 0;
+}
+
 @media only screen and (max-width: 640px){
 .post-button {
     display: none;
@@ -76,6 +81,24 @@ a:hover {
 
 }
 
+hr {
+    margin: 40px 0;
+    height: 1px;
+}
+
+.site-title {
+	transform: perspective(140px) rotateX(30deg);
+	line-height: 22px;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+.special-title {
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	font-size: 14px;
+	letter-spacing: 0px
+}
 
 .testrino .post-button .btn {
     color: #555;
@@ -219,14 +242,127 @@ p {
         }
     }
 
-/* stars */
+
+
+/* mobile view */
+
+@media (max-width: 450px) {
+
+	.post-nav-item .fa {
+    	top: 3px;
+    }
+
+	.footer-inner {
+     margin: 0;
+ 	}
+
+ 	.posts-expand .post-tags a {
+    	display: inline-block;
+    	margin-right: 2px;
+    }
+
+	.post.post-type- {
+	    padding-bottom: 10px;
+	    margin-top: 10px;
+	    border-bottom: 1px dashed #ccc;
+	}
+
+	.posts-expand .post-title {
+    	font-size: 14px;
+	}
+
+	.posts-collapse .collection-title {
+    position: relative;
+    margin: 30px 0;
+	}
+
+	.posts-collapse .post-title {
+    font-size: 10px;
+    padding-top: 4px;
+	}
+
+	.posts-expand .post-tags {
+    	margin-top: 10px;
+    	text-align: center;
+	}
+
+	.post-nav-item a {
+    	line-height: 15px;
+    	font-size: 10px;
+    }
+
+	.posts-expand .post-tags a {
+    font-size: 9px;
+    padding: 0px 4px 1px 4px;
+    line-height: 14px;
+	}
+
+	.btn {
+    	font-size: 8px;
+	}
+	h2 {
+    	margin: 10px 0 1px;
+	}
+	.posts-collapse .post {
+    	margin: 0;
+	}
+	.posts-collapse .post-meta {
+    	font-size: 10px;
+    }
+  	.post-meta {
+     	font-size: 8px;
+	}
+	.post-header h1.post-title {
+    	font-size: 14px;
+	}
+	.post-description-2 {
+    	font-size: 10px;
+	}
+	.post-description {
+    	font-size: 11px;
+    	font-weight: 300;
+	}
+	.posts-expand .post-meta {
+    	font-size: 8px;
+    }
+    p {
+    	line-height: 20px;
+    	margin: 0;
+	}
+	body {
+    	line-height: 20px;
+    	font-size: 12px;
+	}
+	.post-title-cat {
+    	padding-top: 4px;
+    	font-size: 10px;
+	}
+
+    hr {
+    	margin: 20px 0;
+    	height: 1px;
+	}
+
+}
+
+/* search */
+
+.local-search-popup .search-icon, .local-search-popup .popup-btn-close {
+    font-size: 14px;
+    height: 30px;
+
+}
 
 .local-search-popup .search-icon {
     float: left;
-    top: -4px;
+    top: 0px;
     left: -6px;
     position: relative;
 }
+
+/* stars */
+
+
 
 .site-nav-toggle button {
     margin-top: 132px;
@@ -241,7 +377,7 @@ p {
     display: inline-block;
     color: white;
     border-bottom: none;
-    top: -110px;
+    top: -115px;
 }
 
 
@@ -266,9 +402,14 @@ svg {
 
 @media (max-width: 991px) {
 	svg {
-  width: 100%;
+  width: 300px;
   height: 170px;
 }
+}
+
+
+.site-nav-toggle button:focus {
+	outline: none;
 }
 
 * {
