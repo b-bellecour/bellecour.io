@@ -1,0 +1,28 @@
+
+
+<div class="insta-container">
+  <div class="insta" id="instafeed"></div>
+</div>
+      
+
+
+
+
+
+
+
+
+
+
+      <script type="text/javascript" src="/assets/js/instafeed.js"></script>
+      <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'japan',
+            accessToken: '32604616.0871bd8.0aa371d504cd42198ff7d4c00042b4a0',
+            clientId: '0871bd82484c463d9a7a99631fec7c80',
+            sortBy: 'most-recent',
+            limit: 5
+        });
+            feed.run();
+    </script>

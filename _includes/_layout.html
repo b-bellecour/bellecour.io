@@ -43,8 +43,8 @@
           {{ sidebar }}
         {% endif %}
       </div>
+      {% include _partials/insta.html %}
     </main>
-
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include _partials/footer.html %}
@@ -52,6 +52,7 @@
         {{ footer }}
       </div>
     </footer>
+
 
     {% unless site.sidebar.b2t %}
       <div class="back-to-top">
