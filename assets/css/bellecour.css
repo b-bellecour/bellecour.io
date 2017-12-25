@@ -4,6 +4,17 @@
 
 
 /* hack */
+@media screen and (min-width: 1193px) {
+  #wrapper {
+      max-width: 1194px;
+  }
+}
+
+@media screen and (min-width: 1193px) {
+  #nav {
+      max-width: 1194px !important;
+  }
+}
 
 @media screen and (max-width: 745px) {
 

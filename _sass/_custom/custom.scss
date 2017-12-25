@@ -41,8 +41,10 @@ margin: 0;
 }
 
 
-.post.use-motion {
-
+.with-love {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: 1px;
 }
 
 
@@ -86,18 +88,56 @@ hr {
     height: 1px;
 }
 
+/*blog logo*/
+
+.post-toc .nav .active-current > a:hover {
+    color: #8dcaec;
+}
+
+.post-toc ol {
+    margin: 0;
+    padding: 0 2px 0px 10px;
+ }
+
+.sidebar-nav .sidebar-nav-active {
+    color: #8dcaec;
+    border-bottom-color: #8dcaec;
+}
+
+.sidebar-nav .sidebar-nav-active:hover {
+    color: #8dcaec;
+}
+
+.post-toc .nav .active-current > a {
+    color: #8dcaec;
+}
+
+.post-toc .nav .active > a {
+    color: #8dcaec; 
+    border-bottom-color: #8dcaec;
+ }
+
+.kanji {
+	font-size: 78px;
+	vertical-align: 8px;
+	font-weight: 400;
+}
+
 .site-title {
 	transform: perspective(140px) rotateX(30deg);
 	line-height: 22px;
-    font-size: 16px;
-    letter-spacing: 1px
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 2px 0 #bbb, 0 2px 0 #b9b9b9, 0 2px 0 #aaa;
 }
 
 .special-title {
 	border-top: 2px solid;
 	border-bottom: 2px solid;
 	font-size: 14px;
-	letter-spacing: 0px
+	letter-spacing: 0px;
+	text-shadow: none;
 }
 
 .testrino .post-button .btn {
@@ -170,24 +210,62 @@ p {
 .posts-expand .post-body {
     text-align: left;
     }
-    }
+  }
 
 
+.posts-expand .post-tags {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
 .posts-expand .post-tags a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 11px;
-    border: 1px dashed #ccc;
-    padding: 0px 4px 1px 4px;
-    line-height: 20px;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: inline-block;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 18px;
+  line-height: 16px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 0px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  font-size: 10px;
+}
+
+.posts-expand .post-tags a:before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 6px;
+
+}
+
+.posts-expand .post-tags a:after {
+  background: #fff;
+  border-bottom: 9px solid transparent;
+  border-left: 7px solid #eee;
+  border-top: 9px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+
 }
 
 .post-tags a:hover {
-	background: #fff;
-	border: 1px dashed #ccc;
+  background-color: #8dcaec;
+  color: white;
+}
 
+ .post-tags a:hover:after {
+   border-left-color: #8dcaec; 
 }
 
 .site-author-image {
@@ -248,6 +326,14 @@ p {
 
 @media (max-width: 450px) {
 
+	h3 {
+    margin: 20px 0 5px;
+    }
+
+	.posts-expand .post-meta {
+    margin: 3px 0 30px 0;
+	}
+
 	.post-nav-item .fa {
     	top: 3px;
     }
@@ -282,7 +368,7 @@ p {
 	}
 
 	.posts-expand .post-tags {
-    	margin-top: 10px;
+    	margin-top: 20px;
     	text-align: center;
 	}
 
@@ -293,8 +379,9 @@ p {
 
 	.posts-expand .post-tags a {
     font-size: 9px;
-    padding: 0px 4px 1px 4px;
-    line-height: 14px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 	}
 
 	.btn {
@@ -302,7 +389,10 @@ p {
 	}
 	h2 {
     	margin: 10px 0 1px;
+    	font-size: 12px;
+    	line-height: 12px;
 	}
+
 	.posts-collapse .post {
     	margin: 0;
 	}
@@ -365,7 +455,7 @@ p {
 
 
 .site-nav-toggle button {
-    margin-top: 132px;
+    margin-top: 192px;
     padding: 9px 10px;
     background: #292f35;
     border: solid 1px #fff;
