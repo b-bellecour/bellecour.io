@@ -2,8 +2,15 @@
 
 
 .insta-container {
-	display: inherit;
-	height: 10px;
+	display: inline-block;
+    text-align: center;
+    max-width: 970px;
+    margin-left: -36px;
+    margin-right: -36px;
+    margin-top: 40px;
+    bottom: -44px;
+    position: relative;
+    border: solid 1px #eee;
 }
 
 .insta {

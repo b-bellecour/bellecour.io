@@ -21,8 +21,6 @@ alternative_title: <span class=kanji>並盛</span><br>セキュリティ<br><spa
 alternative_subtitle:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: trash_sec
-github_username: b-bellecour
 
 
 
@@ -206,7 +204,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host:
+  host: https://fonts.googleapis.com
 
   # Global font settings used on <body> element.
   global:
@@ -414,7 +412,13 @@ han: false
 # Duoshuo ShortName
 #duoshuo_shortname:
 
-# Disqus
+disqus:
+  enable: enable
+  shortname: bbellecour
+  count: true
+  # hide comments (visitors need to click to load the comments)
+  # count need to be false when hide is true
+  hide: false
 # Hypercomments
 #hypercomments_id:
 
