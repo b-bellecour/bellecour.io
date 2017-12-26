@@ -1,5 +1,16 @@
 // Custom styles.
 
+#disqus_thread {
+	font-size: 12px;
+}
+
+#disqus_thread a:hover{
+	color: #8dcaec;
+}
+
+/* instagram */
+
+
 
 .insta-container {
 	display: inline-block;
@@ -17,6 +28,77 @@
 	display: flex;
 }
 
+.instafeed {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#instafeed a {
+  position: relative;
+  width: 50%;
+}
+@media only screen and (min-width: 580px) {
+  #instafeed a {
+    width: 25%;
+  }
+}
+#instafeed a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#instafeed a div.footer {
+  width: auto;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .5rem 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+#instafeed a div.footer img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: .5rem;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+#instafeed a div.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#instafeed a div.caption {
+  height: 0;
+  opacity: 0;
+  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+#instafeed a:hover .caption, #instafeed .caption {
+  margin: 94px -1rem .5rem;
+  padding: .5rem 1rem;
+  opacity: 1;
+  height: auto;
+}
+
+#instafeed a:hover div.footer {
+background: rgba(255, 255, 255, 0);
+}
+
+
+/* normal */
 
 .post.post-type- {
 	padding-bottom: 15px;

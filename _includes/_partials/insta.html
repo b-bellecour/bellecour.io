@@ -22,7 +22,11 @@
             accessToken: '32604616.0871bd8.0aa371d504cd42198ff7d4c00042b4a0',
             clientId: '0871bd82484c463d9a7a99631fec7c80',
             sortBy: 'most-recent',
+            {% raw %}
+            template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}"/><div class="footer"><div class="caption"><span  class="fa fa-heart-o">&nbsp;</span>{{likes}}</div><div class="user"><span></span></div></div></a>', 
+            {% endraw %}
             limit: 5
+
         });
             feed.run();
     </script>
