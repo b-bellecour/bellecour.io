@@ -1,59 +1,6 @@
 <div class="site-brand-wrapper">
   <div class="site-meta {% if site.custom_logo.enabled %}custom-logo{% endif %}">
-    <svg viewBox="0 0 800 600" preserveAspectRatio="xMinYMid slice">
-  <g id="stars">
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-    <circle></circle>
-  </g>
-  <g id="comets">
-    <line x1="1185" y1="-15" x2="77.5" y2="1092.5"></line>
-    <line x1="854" y1="8" x2="163" y2="699"></line>
-    <line x1="573" y1="-33" x2="-49.5" y2="589.5"></line>
-    <line x1="271" y1="-33" x2="-60.5" y2="298.5"></line>
-    <line x1="463" y1="-76" x2="-102" y2="489"></line>
-    <line x1="120" y1="-19" x2="-26" y2="127"></line>
-    <line x1="866" y1="174.3" x2="305.6" y2="734.7"></line>
-    <line x1="854" y1="462" x2="653" y2="663"></line>
-  </g>
-</svg>
+    
     {% if site.custom_logo.image and site.scheme == 'Muse' %}
       <div class="site-meta-headline">
         <a>
@@ -62,7 +9,6 @@
         </a>
       </div>
     {% endif %}
-
     <div class="custom-logo-site-title">
       <a href="{{ '/blog/' | relative_url}}"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
@@ -76,6 +22,8 @@
         <p class="site-subtitle">{{ site.alternative_subtitle }}</p>
       {% endif %}
   </div>
+<canvas id="field">
+</canvas> 
 
   <div class="site-nav-toggle">
     <button>
@@ -132,3 +80,4 @@
 </nav>
 
 {% include _custom/header.html %}
+<script type="text/javascript" src="/assets/js/space.js"></script>

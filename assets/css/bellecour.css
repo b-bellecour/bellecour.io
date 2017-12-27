@@ -4,6 +4,11 @@
 
 
 /* hack */
+#space {
+  width: 100%;
+  background: linear-gradient(rgba(40, 47, 53, 0.2), rgba(40, 47, 53, 0.5)), url(/img/space.jpg);
+}
+
 @media screen and (min-width: 1193px) {
   #wrapper {
       max-width: 1194px;

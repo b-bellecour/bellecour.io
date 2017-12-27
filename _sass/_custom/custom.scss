@@ -1,5 +1,11 @@
 // Custom styles.
 
+#field {
+  height: 100%;
+  margin-top: -250px;
+ 
+}
+
 #disqus_thread {
 	font-size: 12px;
 }
@@ -15,13 +21,25 @@
 .insta-container {
 	display: inline-block;
     text-align: center;
-    max-width: 970px;
     margin-left: -36px;
     margin-right: -36px;
     margin-top: 40px;
     bottom: -44px;
     position: relative;
     border: solid 1px #eee;
+}
+
+@media only screen and (max-width: 991px) {
+	.insta-container {
+    display: block;
+    text-align: center;
+    margin-left: -5%;
+    margin-right: -5%;
+    margin-bottom: -5%;
+    bottom: 5%;
+    position: relative;
+    border: dashed 1px #bbb;
+	}
 }
 
 .insta {
@@ -37,6 +55,7 @@
 #instafeed a {
   position: relative;
   width: 50%;
+  filter: grayscale(100%);
 }
 @media only screen and (min-width: 580px) {
   #instafeed a {
@@ -48,6 +67,7 @@
   width: 100%;
   height: 100%;
 }
+
 #instafeed a div.footer {
   width: auto;
   position: absolute;
@@ -62,6 +82,7 @@
   color: white;
   text-transform: uppercase;
 }
+
 #instafeed a div.footer img {
   height: 40px;
   width: 40px;
@@ -69,7 +90,9 @@
   margin-right: .5rem;
   -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
           box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+
 }
+
 #instafeed a div.user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,23 +103,34 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
 #instafeed a div.caption {
-  height: 0;
+  margin: 94px -1rem .5rem;
+  padding: .5rem 1rem;
+  height: auto;
   opacity: 0;
   margin-bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+
 #instafeed a:hover .caption, #instafeed .caption {
   margin: 94px -1rem .5rem;
   padding: .5rem 1rem;
   opacity: 1;
   height: auto;
+  transition: all 0.4s
 }
 
 #instafeed a:hover div.footer {
-background: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 0);
+	transition: all 0.4s
 }
 
+#instafeed a:hover{
+	filter: grayscale(0%);
+	transition: all 0.4s
+
+}
 
 /* normal */
 
@@ -554,7 +588,7 @@ p {
 
 
 .site-nav-toggle button {
-    margin-top: 192px;
+    margin-top: 180px;
     padding: 9px 10px;
     background: #292f35;
     border: solid 1px #fff;
@@ -562,7 +596,7 @@ p {
 }
 
 .brand {
-    position: relative;
+    position: inherit;
     display: inline-block;
     color: white;
     border-bottom: none;
@@ -579,7 +613,8 @@ p {
  .site-meta {
  	padding: 0;
     color: white;
-    height: 100%;
+	padding-top: 62px;
+    height: 180px;
     background: linear-gradient( rgba(40, 47, 53, 0.2), rgba(40, 47, 53, 0.5)), url("/img/space.jpg");
     overflow: hidden;
 }
@@ -1434,7 +1469,7 @@ svg {
 .footer {
     position: absolute;
     left: 0;
-    bottom: 60px;
+    bottom: 50px;
     width: 100%;
     min-height: 50px;
     font-size: 12px;
@@ -1442,5 +1477,85 @@ svg {
     line-height: 20px;
 }
 
+
+@media only screen and (max-width: 991px) {
+	.footer {
+		bottom: -10px;
+	}
+
+	#instafeed a div.caption {
+	    margin: 90% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+	#instafeed a:hover .caption, #instafeed .caption {
+	    margin: 90% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+}
+
+
+@media only screen and (max-width: 570px) {
+
+	#instafeed a div.caption {
+	    margin: 92% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+	#instafeed a:hover .caption, #instafeed .caption {
+	    margin: 92% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+}
+
+
+@media only screen and (max-width: 506px) {
+	.footer {
+		bottom: 0px;
+	}
+	#instafeed a div.caption {
+	    margin: 93% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+	#instafeed a:hover .caption, #instafeed .caption {
+	    margin: 93% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+	.footer {
+		bottom: 10px;
+	}
+
+	#instafeed a div.caption {
+	    margin: 94% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+	#instafeed a:hover .caption, #instafeed .caption {
+	    margin: 94% -1rem .5rem;
+	    padding: 6% 1rem;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+	.footer {
+		bottom: 18px;
+	}
+
+}
+
+@media only screen and (max-width: 360px) {
+	.footer {
+		bottom: 25px;
+	}
+
+}
 
 
