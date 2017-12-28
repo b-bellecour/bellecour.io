@@ -1,3 +1,6 @@
 # Redirect domain aliases to primary domain
-http://www.bellecour.io/* http://baptiste.bellecour.io/:splat 301!
-http://bellecour.io/* http://baptiste.bellecour.io/:splat 301!
+http://www.bellecour.io/* https://baptiste.bellecour.io/:splat 301!
+https://bellecour.io/* https://baptiste.bellecour.io/:splat 301!
+http://baptiste.bellecour.io/* https://baptiste.bellecour.io/:splat 301!
+https://bellecour.io/* https://baptiste.bellecour.io/:splat 301!
+http://bellecour.io/* https://baptiste.bellecour.io/:splat 301!
