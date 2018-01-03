@@ -4,6 +4,15 @@
 
 
 /* hack */
+
+header.major p {
+    font-size: 20px;
+}
+
+header.major h2 {
+     font-size: 1.5em; 
+}
+
 #space {
   width: 100%;
   background: linear-gradient(rgba(40, 47, 53, 0.2), rgba(40, 47, 53, 0.5)), url(/img/space.jpg);
