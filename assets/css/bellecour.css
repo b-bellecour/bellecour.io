@@ -4,6 +4,9 @@
 
 
 /* hack */
+body:not(nav), input, select, textarea {
+    font-size: 14pt;
+    }
 
 header.major p {
     font-size: 20px;
