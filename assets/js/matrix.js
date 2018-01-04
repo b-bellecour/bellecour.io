@@ -124,7 +124,7 @@ var NumberElementCollector = function () {
   };
 
   NumberElementCollector.prototype.generateNumberElement = function generateNumberElement() {
-    return new NumberElement(new NumberElementConfig(['０', '1', '2'], [0, innerWidth], // x
+    return new NumberElement(new NumberElementConfig(['0', '1'], [0, innerWidth], // x
     [0, innerHeight], // y
     [15, 50], // size
     [-12, 12] // speed
