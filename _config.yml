@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Baptiste Bellecour
+title: Namimori Sekyurity - 並盛セキュリティ
 email: baptiste@bellecour.io
-description: Personal website, Trilingual information security engineer.
+description: Welcome to my blog ! Namimori Sekyurity.
 author: Baptiste Bellecour
 alternative_title: <span class=kanji>並盛</span><br>セキュリティ<br><span class="special-title">NAMIMORI SEKYURITY</span>
 alternative_subtitle:
