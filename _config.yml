@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Namimori Sekyurity - 並盛セキュリティ
 email: baptiste@bellecour.io
-description: Welcome to my blog ! Namimori Sekyurity.
+description: Welcome to my blog ! Namimori Sekyurity. You will find some posts about IT & security written in english. The japan & japanese language related articles are written in french.
 author: Baptiste Bellecour
 alternative_title: <span class=kanji>並盛</span><br>セキュリティ<br><span class="special-title">NAMIMORI SEKYURITY</span>
 alternative_subtitle:
