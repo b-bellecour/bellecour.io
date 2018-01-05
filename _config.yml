@@ -16,7 +16,7 @@
 title: Namimori Sekyurity - 並盛セキュリティ
 email: baptiste@bellecour.io
 description: Welcome to my blog ! Namimori Sekyurity. You will find some posts about IT & security written in english. The japan & japanese language related articles are written in french.
-author: Baptiste Bellecour
+author: testrino
 alternative_title: <span class=kanji>並盛</span><br>セキュリティ<br><span class="special-title">NAMIMORI SEKYURITY</span>
 alternative_subtitle:
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -115,7 +115,7 @@ plugins_dir:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Baptiste Bellecour"
+keywords: "Baptiste Bellecour namimori sekyurity security japan information cyber"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
