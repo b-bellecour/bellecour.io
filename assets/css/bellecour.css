@@ -120,7 +120,7 @@ nav ul {
 
 /* matrice binaire canvs */
 
-canvas {
+canvas:not(#cs) {
   width: 100%;
   height: 100%;
   display: block;
@@ -999,73 +999,17 @@ font-size: 12px;
 
 /* SKILLS */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-.progress {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  max-width: 1024px;
-}
-.progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93a2ac;
-  margin: 2rem;
-}
-.progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
-  font-size: 0.9em
-}
-.progress > li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 3.7rem;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-.progress svg {
-  width: 10rem;
-  height: 10rem;
-}
-.progress svg:nth-child(2) {
-  position: absolute;
-  left: 6px;
-  top: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #fff;
-  opacity: 0.9;
-  -webkit-animation: load 10s;
-          animation: load 10s;
+.skills-container {
+  padding-bottom: 30px;
 }
 
-
-.progress2 stop{
-
+.skills{
+  font-size: 2px;
 }
+
+.chartjs-render-monitor {
+}
+
 
 /* projects grid */
 
