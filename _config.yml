@@ -20,7 +20,7 @@ author:  Baptiste Bellecour  <div class='circle pulse'> </div> </br>
 alternative_title: <span class=kanji>並盛</span><br>セキュリティ<br><span class="special-title">NAMIMORI SEKYURITY</span>
 alternative_subtitle:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://baptiste.bellecour.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 
