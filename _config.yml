@@ -31,6 +31,7 @@ theme: minima
 gems:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
