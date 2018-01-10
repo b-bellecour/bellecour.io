@@ -25,7 +25,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 
-
 # Build settings
 markdown: kramdown
 theme: minima
@@ -160,7 +159,7 @@ menu:
   #about: /about/
   archives: /blog/archives/
   #tags: /blog/tags/
-  sitemap: /sitemap.xml
+  #isitemap: /sitemap.xml
   #commonweal: /404.html
 
 
