@@ -1539,3 +1539,27 @@ li h4 {
 }
 
 
+/* responsive fix */
+
+@media only screen and (max-width: 1024px) {
+
+#nav ul li a:not(.logosh) {
+    padding: 0 10px;
+    font-size: 18px;
+    margin-top: 1px;
+}
+}
+
+@media only screen and (max-width: 771px) {
+
+#nav ul li a:not(.logosh) {
+    padding: 0 8px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+}
+
+
+
+
+

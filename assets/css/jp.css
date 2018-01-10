@@ -1,0 +1,35 @@
+
+
+/* responsive fix */
+
+@media only screen and (max-width: 1160px) {
+
+#nav ul li a:not(.logosh) {
+    padding: 0 10px;
+    font-size: 18px;
+    margin-top: 3px;
+}
+}
+
+@media only screen and (max-width: 910px) {
+
+#nav ul li a:not(.logosh) {
+    padding: 0 7px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+}
+
+@media only screen and (max-width: 802px) {
+
+#nav ul li a:not(.logosh) {
+    padding: 0 7px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+}
+
+
+
+
+
