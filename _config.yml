@@ -159,7 +159,7 @@ menu:
   #about: /about/
   archives: /blog/archives/
   #tags: /blog/tags/
-  #sitemap: /sitemap.xml
+  sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
