@@ -3,3 +3,12 @@
 
 User-agent: *
 Sitemap: https://baptiste.bellecour.io/sitemap.xml
+Disallow: /i
+Disallow: /see
+Disallow: /what
+Disallow: /your
+Disallow: /are
+Disallow: /trying
+Disallow: /to
+Disallow: /do
+Disallow: /sir
