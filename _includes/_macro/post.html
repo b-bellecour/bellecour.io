@@ -152,6 +152,7 @@
                 </a>
               </span>
             {% elsif site.disqus.enable and site.disqus.count %}
+            <script id="dsq-count-scr" src="https://{{site.disqus.shortname}}.disqus.com/count.js" async></script>
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
@@ -159,10 +160,10 @@
                 </span>
                 <a href="{{ post.url | relative_url }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="{{ post.url }}" itemprop="commentCount"></span>
+                        data-disqus-url="{{ post.url | prepend: site.url }}" itemprop="commentCount"></span>
                 </a>
               </span>
-              <script id="dsq-count-scr" src="https://{{site.disqus.shortname}}.disqus.com/count.js" async></script>
+              
             {% elsif site.hypercomments_id %}
             <!--noindex-->
               <span class="post-comments-count">
