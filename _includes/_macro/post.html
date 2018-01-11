@@ -159,7 +159,7 @@
                 </span>
                 <a href="{{ post.url | relative_url }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="{{ post.url | prepend: site.url}}" itemprop="commentCount"></span>
+                        data-disqus-identifier="{{ post.url | prepend: site.url }}" itemprop="commentCount"></span>
                 </a>
               </span>
               <script id="dsq-count-scr" src="https://{{site.disqus.shortname}}.disqus.com/count.js" async></script>
@@ -171,7 +171,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ post.url | relative_url }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="{{ post.url }}" itemprop="commentsCount"></span>
+                  <span class="post-comments-count hc-comment-count" data-xid="{{ post.url | prepend: site.url }}" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
