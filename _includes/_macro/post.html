@@ -157,9 +157,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="{{ page.url | relative_url }}#comments" itemprop="discussionUrl">
+                <a href="{{ post.url | relative_url }}#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="{{ page.url }}" itemprop="commentCount"></span>
+                        data-disqus-identifier="{{ post.url }}" itemprop="commentCount"></span>
                 </a>
               </span>
             {% elsif site.hypercomments_id %}
