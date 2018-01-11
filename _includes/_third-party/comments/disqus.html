@@ -9,6 +9,9 @@
 <script>
 /**************************************************************/
 /*AM22 Named Function to load Disqus - START*/
+
+
+
 var disqus_identifier = "{{ post.url | prepend: site.url }}"; //Use current page URL as Disqus_URL_Identifier. You can change it as per your requirement.
 var ds_loaded = false; //To track loading only once on a page.
 function loadDisqus()
@@ -33,6 +36,8 @@ dsq.src = 'https://bbellecour.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }
 }
+
+
 /*AM22 Named Function to load Disqus - END*/
 /*AM22 Disqus lazy load - START*/
 $(function ()
