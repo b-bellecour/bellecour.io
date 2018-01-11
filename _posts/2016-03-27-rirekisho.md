@@ -6,6 +6,7 @@ img: rirekisho.jpg
 category: [japon, français]
 description: Comment écrire son cv sans faire marrer le RH.
 permalink: /blog/rirekisho/
+comments: true
 tags:
 - emplois
 - CV

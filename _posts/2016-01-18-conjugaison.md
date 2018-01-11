@@ -6,6 +6,7 @@ img: verb.jpg
 category: [japon, français, langue japonaise]
 description: Une bonne louche de conjuguaison nippone.
 permalink: /blog/conjugaison/
+comments: true
 tags:
 
 - langue japonaise

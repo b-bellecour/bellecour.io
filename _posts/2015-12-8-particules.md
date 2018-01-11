@@ -6,6 +6,7 @@ img: prtcl.jpg
 category: [japon, français, langue japonaise]
 description: C'est le moment d'aller se prendre un café.
 permalink: /blog/particules/
+comments: true
 tags :
 
 - langue japonaise

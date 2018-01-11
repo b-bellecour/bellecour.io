@@ -6,6 +6,7 @@ img: hellowork.jpg
 category: [japon, français]
 description: Vous n'êtes pas venu au Japon pour faire le touriste, Hellowork vous aide à exercer votre métier
 permalink: /blog/hellowork/
+comments: true
 tags:
 - emploi
 - hellowork

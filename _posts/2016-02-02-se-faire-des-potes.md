@@ -6,6 +6,7 @@ img: pote.jpg
 category: [japon, français]
 description: Se sociabiliser sans passer pour une quiche
 permalink: /blog/se-faire-des-potes/
+comments: true
 tags:
 - sciences sociales
 - poto

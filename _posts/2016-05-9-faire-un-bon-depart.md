@@ -6,6 +6,7 @@ img: start.jpg
 category: [japon, français, langue japonaise]
 description: Apprendre la langue japonaise, like a boss.
 permalink: /blog/faire-un-bon-depart/
+comments: true
 tags:
 
 - langue japonaise

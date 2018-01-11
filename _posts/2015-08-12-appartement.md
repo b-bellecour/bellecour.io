@@ -6,6 +6,7 @@ img: appart.jpg
 category: [japon, français]
 description:  Sans perdre un bras.
 permalink: /blog/appartements/
+comments: true
 tags:
 - logements
 - appartements

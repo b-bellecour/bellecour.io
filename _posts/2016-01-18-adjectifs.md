@@ -6,6 +6,7 @@ img: adj.jpg
 category: [japon, français, langue japonaise]
 description: Premieres notions de conjuguaison.
 permalink: /blog/adjectifs/
+comments: true
 tags:
 
 - langue japonaise

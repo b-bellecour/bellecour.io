@@ -6,6 +6,7 @@ img: gramn2.jpg
 category: [japon, français, langue japonaise]
 description: Les huit points suivants sont principalement utilisés à l'écrit.
 permalink: /blog/langage-soutenu/
+comments: true
 tags:
 
 - langue japonaise

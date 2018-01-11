@@ -6,6 +6,7 @@ img: logement.jpg
 category: [japon, français]
 description: 4 différents moyens de vous loger au japon.
 permalink: /blog/logements/
+comments: true
 tags:
 - logement
 - appartement
