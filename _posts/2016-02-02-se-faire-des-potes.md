@@ -2,7 +2,6 @@
 title: Se faire des potes sur tokyo
 layout: post
 date: 2016-02-24
-img: pote.jpg
 category: [japon, français]
 description: Se sociabiliser sans passer pour une quiche
 permalink: /blog/se-faire-des-potes/
